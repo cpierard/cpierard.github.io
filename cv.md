@@ -1,8 +1,10 @@
 ---
 layout: page
 title: Curriculum Vitae
-#permalink: /cv/
+permalink: /cv/
 ---
+<a href="/assets/CV_Pierard.pdf" style="float: right;">Download</a>
+
 
 # Education
 -----------
@@ -43,13 +45,13 @@ title: Curriculum Vitae
 &nbsp;&nbsp;&nbsp;Mexico City. April 2017 - November 2017.<br />
 &nbsp;&nbsp;&nbsp;Undergraduate Research Assistant, Laboratory of Geophysical Fluids.<br />
 &nbsp;&nbsp;&nbsp;Project: _Numerical simulations of convection in a stratified fluid using the Dedalus framework_.<br />
-&nbsp;&nbsp;&nbsp;Supervisor: _Dr. Angel Ruiz Angulo_.<br />
+&nbsp;&nbsp;&nbsp;Supervisor: _Dr. Angel Ruiz-Angulo_.<br />
 
 **CICESE**<br />
 &nbsp;&nbsp;&nbsp;Tampico. November 2017.<br />
 &nbsp;&nbsp;&nbsp;Field Assistant, Glider deployment in the Gulf of Mexico.<br />
 &nbsp;&nbsp;&nbsp;Project: _Oceanographic Monitoring Group with Gliders (GMOG)_.<br />
-&nbsp;&nbsp;&nbsp;Supervisor: _Dr. Angel Ruiz Angulo_.<br />
+&nbsp;&nbsp;&nbsp;Supervisor: _Dr. Angel Ruiz-Angulo_.<br />
 <br />
 
 # Awards
@@ -66,13 +68,13 @@ title: Curriculum Vitae
 <br />
 
 **Annual Reunion of the Mexican Geophysical Union**<br />
-&nbsp;&nbsp;&nbsp;"Study of the Planetary Boundary Layer over Mexico City during the inversion layers period" (Poster).<br />
+&nbsp;&nbsp;&nbsp;"Study of the Planetary Boundary Layer over Mexico City during the inversion layers period."<br />
 &nbsp;&nbsp;&nbsp;_A. Burgos, C. Pierard, J. Garc ́ıa, A. Ruiz-Angulo, M. Grutter, A. Bezanilla_.<br />
-&nbsp;&nbsp;&nbsp;November 2017.<br />
+&nbsp;&nbsp;&nbsp;November 2017 (Poster).<br />
 
 <br />
 
-# Workshops
+# Workshops & Summer Schools
 ------------
 <br />
 
@@ -85,6 +87,28 @@ title: Curriculum Vitae
 
 **JuliaCon 2016 (attendee)**<br />
 &nbsp;&nbsp;&nbsp;MIT – Cambridge, MA.<br />
+
+<br />
+
+# Courses & Certifications
+------------
+<br />
+
+**Online Courses**<br />
+- _Nonlinear Dynamics: Mathematical and Computational Approaches_.<br />
+&nbsp;&nbsp;&nbsp;Santa Fe Institute. [Complexity Explorer](https://www.complexityexplorer.org/courses/60-nonlinear-dynamics-mathematical-and-computational-approaches-fall-2016/certificates/3888316416.pdf) (December 2016).<br />
+- _12.340x: Global Warming Science_.<br />
+&nbsp;&nbsp;&nbsp;MITx. [edX](https://courses.edx.org/certificates/369bb7be9a0d41ec96edb0c53fd8d612) (May 2016).<br />
+- _ChM003x: Sensing Planet Earth – from Core to Outer Space_.<br />
+&nbsp;&nbsp;&nbsp;Chalmers University of Technology. [edX](https://courses.edx.org/certificates/b115af24aae6429db80918d261ce696e) (March 2016).<br />
+- _Monitoring Climate from Space._<br />
+&nbsp;&nbsp;&nbsp;European Space Agency. [FutureLearn](https://www.futurelearn.com/statements/onwhpfg?utm_campaign=Share+Links&utm_medium=futurelearn-statement&utm_source=linkedin) (January 2016).<br />
+- _Causes of Climate Change_.<br />
+&nbsp;&nbsp;&nbsp;University of Bergen. [FutureLearn](https://www.futurelearn.com/statements/jk2fktn) (October 2015).<br />
+
+**English Courses and Certifications**<br />
+- TOEFL iBT (ETS).<br />
+&nbsp;&nbsp;&nbsp;Score: 99/120 (March 2018).<br />
 
 <br />
 
