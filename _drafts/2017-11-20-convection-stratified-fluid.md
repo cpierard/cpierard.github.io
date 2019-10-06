@@ -13,5 +13,6 @@ _This work was part of my batchelor's internship done at the Laboratory of Geoph
 ![NN](/../assets/projects/convection/ugm_28_NN.png)
 
 ## Animation
+![](/../assets/projects/convection/full.gif)
 
-{% include youtubePlayer.html id=page.youtubeId %}
+[Youtube](https://www.youtube.com/watch?v=mP6my1nAQlo)
