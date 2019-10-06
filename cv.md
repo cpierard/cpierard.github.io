@@ -81,13 +81,15 @@ permalink: /cv/
 **Marine Master’s Summer School**<br />
 &nbsp;&nbsp;&nbsp;Royal Netherlands Institute for Sea Research (NIOZ) – Texel, Netherlands.<br />
 &nbsp;&nbsp;&nbsp;Project: _Tidal Dynamics of the Marsdiep Channel_.<br />
+&nbsp;&nbsp;&nbsp;_July 2019_.<br />
 
 **Summer School in Atmospheric Sciences**<br />
 &nbsp;&nbsp;&nbsp;UNAM – Juriquilla, Mexico.<br />
+&nbsp;&nbsp;&nbsp;_June 2017_.<br />
 
 **JuliaCon 2016 (attendee)**<br />
 &nbsp;&nbsp;&nbsp;MIT – Cambridge, MA.<br />
-
+&nbsp;&nbsp;&nbsp;_June 2016_.<br />
 <br />
 
 # Courses & Certifications

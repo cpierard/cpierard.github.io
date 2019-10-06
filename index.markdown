@@ -5,12 +5,17 @@
 layout: page
 ---
 
-<img src="/assets/conv_23.gif" width="300" style="float: right; margin-left: 25px; margin-bottom: 25px;"/>
+[//]: <> <img src="/assets/conv_23.gif" width="300" style="float: right; margin-left: 25px; margin-bottom: 25px;"/>
+<img src="/assets/conv_23.gif" width="300" align="right"/>
 
-# Welcome!
+<br />
 <br />
 
-This is my personal website where I post about recent projects I've been involved during my career.   
+# Welcome!
 
+
+This is my website where I post about [projects](/projects/) I've been involved during my Batchelor and Master studies so far.
+
+Feel free to contact me via email or social media.
 
 [//]: <> <img src="/assets/conv_23.gif" width="300"/>

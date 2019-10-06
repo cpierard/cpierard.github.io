@@ -4,9 +4,9 @@ title: About
 permalink: /about/
 ---
 
-<img src="/assets/cumbiero.JPG" width="350" style="float: right; margin-left: 25px;"/>
+<img src="/assets/lobos.JPG" width="300" style="float: right; margin-left: 25px;"/>
 
-# La cumbia me exita y me emociona.
+I'm a Master's student with interest the study of Geophysical Flows in the Ocean and the Atmosphere, using numerical simulations and direct observations.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper sit amet risus nullam eget felis eget. Consectetur adipiscing elit pellentesque habitant morbi. Aliquam ut porttitor leo a diam sollicitudin tempor id. Convallis tellus id interdum velit laoreet id donec ultrices. Condimentum mattis pellentesque id nibh tortor id aliquet. Lorem mollis aliquam ut porttitor leo. Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Diam vulputate ut pharetra sit amet aliquam id diam. Ut tortor pretium viverra suspendisse. Egestas erat imperdiet sed euismod. Lectus mauris ultrices eros in. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Amet volutpat consequat mauris nunc congue. Pulvinar mattis nunc sed blandit libero volutpat. Id velit ut tortor pretium viverra suspendisse potenti nullam ac. Integer eget aliquet nibh praesent. Lorem ipsum dolor sit amet consectetur. Habitasse platea dictumst vestibulum rhoncus.
 
