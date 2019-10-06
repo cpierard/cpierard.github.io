@@ -5,9 +5,12 @@
 layout: page
 ---
 
-<img src="/assets/lobos.jpg" width="300" style="float: right; margin-left: 25px; margin-bottom: 25px;"/>
+<img src="/assets/conv_23.gif" width="300" style="float: right; margin-left: 25px; margin-bottom: 25px;"/>
 
 # Welcome!
 <br />
 
 This is my personal website where I post about recent projects I've been involved during my career.   
+
+
+[//]: <> <img src="/assets/conv_23.gif" width="300"/>
