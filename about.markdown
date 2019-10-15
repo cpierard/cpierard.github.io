@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="/assets/lobos.JPG" width="300" style="float: right; margin-left: 25px;"/>
+<img src="/assets/lobos.jpg" width="300" style="float: right; margin-left: 25px;"/>
 
 I'm a Master's student with interest the study of Geophysical Flows in the Ocean and the Atmosphere, using numerical simulations and direct observations.
 

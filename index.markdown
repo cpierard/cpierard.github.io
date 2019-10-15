@@ -5,8 +5,8 @@
 layout: page
 ---
 
-[//]: <> <img src="/assets/conv_23.gif" width="300" style="float: right; margin-left: 25px; margin-bottom: 25px;"/>
-<img src="/assets/conv_23.gif" width="300" align="right"/>
+[//]: <> <img src="/assets/conv_23.gif" width="300" style="float: right;"/>
+<img src="/assets/a1.gif" width="300" align="right"/>
 
 <br />
 <br />
@@ -14,7 +14,7 @@ layout: page
 # Welcome!
 
 
-This is my website where I post about [projects](/projects/) I've been involved during my Batchelor and Master studies so far.
+This is my website where I post about [projects](/projects/) I've been involved during my Bachelor and Master studies.
 
 Feel free to contact me via email or social media.
 
