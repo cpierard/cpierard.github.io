@@ -6,7 +6,8 @@ layout: page
 ---
 
 [//]: <> <img src="/assets/conv_23.gif" width="300" style="float: right;"/>
-<img src="/assets/a1.gif" width="300" align="right"/>
+[//]: <> <img src="/assets/a1.gif" width="300" align="right"/>
+<img src="/assets/a1.gif" width="300" style="float: right; margin-left: 25px; margin-right: 25px;"/>
 
 <br />
 <br />
