@@ -14,7 +14,7 @@ layout: page
 # Welcome!
 
 
-This is my website where I post about [projects](/projects/) I've been involved during my Bachelor and Master studies.
+This is my website where I post about [projects](/projects/) I've been involved during my bachelor's and master studies.
 
 Feel free to contact me via email or social media.
 

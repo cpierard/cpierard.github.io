@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-Currently under construction.
+**I'm currently working on the posts for the different projects I've worked on. I will upload them eventually.**
 
 Some of the projects I have worked on.
 
