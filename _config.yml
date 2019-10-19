@@ -21,7 +21,7 @@
 title: Claudio Pierard
 email: cl.pierard (at) gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm a Master's student of Environmental Fluid Mechanics at the University Grenoble Alpes, with a deep interest in the dynamics of the ocean and atmosphere.
+  I'm a Master's student in Environmental Fluid Mechanics at the University Grenoble Alpes, with a deep interest in the dynamics of the ocean and atmosphere.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: cpierard
