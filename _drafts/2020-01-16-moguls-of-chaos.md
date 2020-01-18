@@ -73,7 +73,6 @@ To reduce the dimensions of our system, we can make the downslope velocity to be
 <img src="/../assets/projects/moguls_of_chaos/sleds.png" width="30%" />
 </p>
 
-
 Initial conditions $$x = 0$$ m, $$y = [0, 0.1]$$ m, $$v = 2$$ m/s and $$u = 3.5$$ m/s.
 
 We see that the system behaves chaotically even though the downslope speed is maintained.
@@ -83,6 +82,10 @@ We see that the system behaves chaotically even though the downslope speed is ma
 Now our system has 3 variables, which will allow us to plot its phase space. The only problem now is that the system is no compact because $$x$$ and $$y$$ can grow or decrease infinitely. Although, the cross slope velocity $$v$$ is bounded between $$-5$$ m/s and $$5$$ m/s, because of friction.
 
 A way to do this is reducing the slope to be $$x \in [-5, 5]$$ m and $$y \in [-2, 2]$$ m, and set the boundaries to be periodic. This way, we will be able to compact the position of the sled without altering the physics of the system.
+
+<p class="aligncenter">
+<img src="/../assets/projects/moguls_of_chaos/shape_of_moguls_compact.png" width="50%" />
+</p>
 
 We can see how the sled goes out of the domain and re-enters at the opposite side.
 

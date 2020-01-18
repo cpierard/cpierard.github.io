@@ -109,8 +109,12 @@ permalink: /cv/
 &nbsp;&nbsp;&nbsp;University of Bergen. [FutureLearn](https://www.futurelearn.com/statements/jk2fktn) (October 2015).<br />
 
 **English Courses and Certifications**<br />
+
+- IELTS (British Council).<br />
+&nbsp;&nbsp;&nbsp;Score: 7/9. *November 2019*.<br />
+
 - TOEFL iBT (ETS).<br />
-&nbsp;&nbsp;&nbsp;Score: 99/120 (March 2018).<br />
+&nbsp;&nbsp;&nbsp;Score: 99/120. *March 2018*.<br />
 
 <br />
 
@@ -125,4 +129,4 @@ permalink: /cv/
 &nbsp;&nbsp;&nbsp;Dutch (beginner). <br />
 
 **Programming Languages**<br />
-&nbsp;&nbsp;&nbsp;_Python, Julia, Git, Bash, Matlab_.
+&nbsp;&nbsp;&nbsp;_Python, Julia, Git, Bash, Matlab (avoid at all costs)_.
