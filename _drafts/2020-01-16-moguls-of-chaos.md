@@ -10,11 +10,13 @@ permalink: /projects/moguls-of-chaos/
 }
 </style>
 
+Mogul skiing is a ski discipline that consists of descending a slope full of small regular bumps, where the skills and technique of skiers are tested to its full. Ed Lorenz, an outdoorsman and science legend, discovered that objects descending the moguls exhibit chaotic behavior. He built a small numerical model to explore the dynamics of an idealized board descending such type of slopes and exemplified some of the tools used for studying chaos.
+
 <p class="aligncenter">
     <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.independentsportsnews.com%2Fwp-content%2Fuploads%2F2018%2F12%2FFIS-Freestyle-Ski-World-Cup-in-Thaiwoo.jpg&f=1&nofb=1" width = "450" alt="centered image"/>
 </p>
 
-This example was taken from the book **The Essence of Chaos** by *Edward Lorenz*. The aim of the model he presets in that chapter is to show how we can construct parsimonious models from real case phenomena that exhibit chaos.
+This example was taken from the book **The Essence of Chaos** by *Edward Lorenz*. The aim of the model he presents in his book is showing how we can construct parsimonious models that exhibit chaos, from real case phenomena.
 
 The model consists of a board that goes down a regularly-bumpy slope or moguls without any control of the direction whatsoever. The dynamical system of this board is described by the system of ODE shown bellow
 
@@ -33,65 +35,70 @@ $$\frac{dx}{dt} = U, \quad \frac{dx}{dt} = V, \quad \frac{dz}{dt} = W.$$
 \frac{d \vec{u}}{dt} &= -F \nabla_H H - c \vec{u}.\\
 \end{align}
 
-$$\vec{x} = (x,y,z)$$ are the spacial coordinates and $$\vec{u} = (u,v,w)$$ are the components of the velocity of the board. And $$H$$ is the shape pf the slope that is parameterized by the following expression:
+$$\vec{x} = (x,y,z)$$ are the spacial coordinates and $$\vec{u} = (u,v,w)$$ are the components of the velocity of the board. And $$H$$ is the shape of the slope that is parameterized by the following expression:
 
-$$H(x,y) = -ax - b \ cos(px) \ cos(qy).$$
+$$H(x,y) = -ax - b \ cos(px) \ cos(qy),$$
 
-Our first goal is to solve the ODE system for a given initial condition using a numerical integration method.
+where $$p$$ and $$q$$ are the spatial frequencies in which the bumps and pits alternate. The $$a$$ parameter is the angle of the slope and the $$b$$ parameter can be seen as the height of the bumps measured form the mean slope (remember this parameter because it will be important for the last section).
+
+This system of equations can be solved numerically using a Runge-Kutta scheme, thus, our first objective is to integrate several solutions for different initial conditions to observe the behavior of the board. This blog doesn't show the code used to solve the equations or plot the examples, but it can be found in the following [repository](https://github.com/cpierard/moguls_of_chaos).
 
 # Boards down the slope!
 
-Our first goal is to solve the ODE system for a given initial condition using a numerical integration method. For this, we declare a function containing the right-hand side terms of the ODE system that we want to solve.
-
-We use the fourth-order **Runge-Kutta method** as an integrator and we wrap it around the `solver` function.
-
-So now that we have our solver we can crush some snow with our boards in the moguls!
+I used the fourth-order *Runge-Kutta method* as an integrator and we wrap it around a *solver*, to integrate the four variables of our system. Once the solver is working properly, we can compute the solutions for different boards.
 
 **Example 1**
 
-Initial conditions: $$x = 0.0$$, $$y = [0,1]$$ (randomly chosen), $$U = 3.5$$ and $$V = 0$$.
+For this example we set the initial conditions: $$x = 0.0$$, $$u = 3.5$$, $$v = 0$$, and $$y$$ it is randomly chosen form the interval $$[0,1]$$. The resulting trajectories can be seeing int the following figure.
 
 <p class="aligncenter">
 <img src="/../assets/projects/moguls_of_chaos/bords_rand.png" width="30%" />
 </p>
 
-**Example 3**
-Initial conditions just spaced 1mm apart from $$0.497$$m to $$0.503$$m.
+We can see how the boards follow similar trajectories, down until 10 m, where they start to diverge.
+
+**Example 2**
+We can explore the behavior with other initial conditions, but this time we set the $$y$$ position of 7 boards only 1 mm apart between the values $$[0.497, 0.503]$$ m, keeping the same values for $$x,u,v$$ used in the previous example.
 
 <p class="aligncenter">
 <img src="/../assets/projects/moguls_of_chaos/boards_1mm.png" width="30%" />
 </p>
 
+The figure above shows how the trajectories of the boards are practically the same until 20 m down the slope. After 20 m, some small variations appear in the trajectories of the boards, until they start growing bigger and bigger. Around 50 m down the slope, the trajectories diverge completely one from another, following very different paths.
 
-The above shows that the system is sensitive to initial conditions but we would like to explore further the dynamics of the system. One of the techniques for exploring the dynamics of the system is by plotting the phase space and see how the system behaves. The only problem is that for this system, there are 4 variables, which means that the phase space of the system lives in a four-dimensional space, which is not possible for us to visualize. We need to do some modifications to our board to reduce the dimensions of our system.
+These boards are a perfect example of a system that is sensitive to initial conditions, i.e. that small perturbations or variations in the initial conditions can lead to totally different solutions at some time in the future, which is commonly known as **Chaos theory**.
+
+From the trajectories of the boards is difficult to find regularities in the dynamics of this system, because the trajectories appear to behave randomly as they go down the slope. Therefore, in order to find regularity, we can use the velocities of the boards as they go down the slope. One of the tools that are very handy in the dynamical systems is the phase space plots, which basically consists of plotting the velocity of a system against its position. The problem is that our system has two spatial coordinates and two velocities components, which would make our phase space plot four-dimensional. Our brains can't handle a four-dimensional space, so we need to do some modifications to our system in order to reduce its dimensions to only three.
 
 # Sleds down the slope!
 
-To reduce the dimensions of our system, we can make the downslope velocity to be constants, or in the real world, by equipping our board with some brakes and an engine so it can maintain a constant velocity while going down the pits or up the bumps. In a mathematical sense, we say that $$\partial_t U = 0$$.
+To reduce the dimensions of our system, we can make the downslope velocity constant, or in the real world scenario, by equipping our board with some brakes and an engine so it can maintain a constant velocity while going down the pits or up the bumps, transforming it into a sled! In a mathematical sense, we say that $$\partial_t u = 0$$. This modification allows us to neglect the $u$ component of velocity and reduce the phase space three dimensions.
 
 <p class="aligncenter">
 <img src="/../assets/projects/moguls_of_chaos/sleds.png" width="30%" />
 </p>
 
-Initial conditions $$x = 0$$ m, $$y = [0, 0.1]$$ m, $$v = 2$$ m/s and $$u = 3.5$$ m/s.
-
-We see that the system behaves chaotically even though the downslope speed is maintained.
+The previous figure shows 10 sleds going down the slope, with initial conditions $$x = 0$$ m, $$y = [0, 0.1]$$ m, $$v = 2$$ m/s, and $$u = 3.5$$ m/s. We see that the system behaves chaotically even though the downslope speed is maintained. We also see how all the sleds reach the same downslope position.
 
 # Sleds and strange attractors
 
-Now our system has 3 variables, which will allow us to plot its phase space. The only problem now is that the system is no compact because $$x$$ and $$y$$ can grow or decrease infinitely. Although, the cross slope velocity $$v$$ is bounded between $$-5$$ m/s and $$5$$ m/s, because of friction.
+Now our system has 3 variables, which will allow us to visualize its phase space plot. But the modifications that we need to do to our system are not over. If we see the trajectory-plots displayed above, we can see that $$x$$ and $$y$$ grow infinitely, which means that our phase space plot will not be compact, just a collection of points scattered around an infinite domain. The good news is that the cross-slope velocity is already bounded between $$[-5, 5]$$ m/s because of friction.
 
-A way to do this is reducing the slope to be $$x \in [-5, 5]$$ m and $$y \in [-2, 2]$$ m, and set the boundaries to be periodic. This way, we will be able to compact the position of the sled without altering the physics of the system.
+We need to find a way to make our system compact while preserving the physics of the system. If we analyze closely the structure of our mogul-slope, we can see that it is a collection of regular bumps and pits, that repeat themselves towards infinity.
+
+<p class="aligncenter">
+<img src="/../assets/projects/moguls_of_chaos/shape_of_moguls.png" width="70%" />
+</p>
+
+Therefore, we can crop our domain in a tile (seeing in the figure below) from which we can reconstruct our full slope by placing consecutive tiles next to one another. In other words, we take this tile and set its boundaries to be periodic, so whatever exits the right side, re-enters the domain by the left side, and whatever exits the domain in by the lower boundary, re-enters by the top boundary. This slope-tile is defined in the domain: $$x \in [-5,5]$$ m and $$y \in [-2,2]$$ m.
 
 <p class="aligncenter">
 <img src="/../assets/projects/moguls_of_chaos/shape_of_moguls_compact.png" width="50%" />
 </p>
 
-We can see how the sled goes out of the domain and re-enters at the opposite side.
+**The washing machine!**
 
 The main interest of this is to build a strange attractor. For this, we set a ensemble of sled all starting from $$x = 0$$m, but with random $$y$$ and cross slope velocities $$v$$, with $$u$$ set to 3.5m.
-
-**Ten thousand sleds going down the slope!**
 
 <p class="aligncenter">
 <img src="/../assets/projects/moguls_of_chaos/b_05.gif" width="50%" />
