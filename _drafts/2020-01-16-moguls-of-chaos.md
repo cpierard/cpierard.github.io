@@ -20,7 +20,7 @@ This example was taken from the book **The Essence of Chaos** by *Edward Lorenz*
 
 The model consists of a board that goes down a regularly-bumpy slope or moguls without any control of the direction whatsoever. The dynamical system of this board is described by the system of ODE shown bellow
 
-$$\frac{dx}{dt} = U, \quad \frac{dx}{dt} = V, \quad \frac{dz}{dt} = W.$$
+$$\frac{dx}{dt} = u, \quad \frac{dx}{dt} = v, \quad \frac{dz}{dt} = w.$$
 
 \begin{align}
 \frac{du}{dt} &= -F \partial_x H - cu,
@@ -31,25 +31,24 @@ $$\frac{dx}{dt} = U, \quad \frac{dx}{dt} = V, \quad \frac{dz}{dt} = W.$$
 \begin{align}
 \frac{dw}{dt} &= -g + F - cw.
 \end{align}
-\begin{align}
-\frac{d \vec{u}}{dt} &= -F \nabla_H H - c \vec{u}.\\
-\end{align}
 
-$$\vec{x} = (x,y,z)$$ are the spacial coordinates and $$\vec{u} = (u,v,w)$$ are the components of the velocity of the board. And $$H$$ is the shape of the slope that is parameterized by the following expression:
+$$\vec{x} = (x,y,z)$$ are the spacial coordinates and $$\vec{u} = (u,v,w)$$ are the components of the velocity of the board. $$H$$ is the shape of the slope that is parameterized by the following expression:
 
 $$H(x,y) = -ax - b \ cos(px) \ cos(qy),$$
 
 where $$p$$ and $$q$$ are the spatial frequencies in which the bumps and pits alternate. The $$a$$ parameter is the angle of the slope and the $$b$$ parameter can be seen as the height of the bumps measured form the mean slope (remember this parameter because it will be important for the last section).
 
-This system of equations can be solved numerically using a Runge-Kutta scheme, thus, our first objective is to integrate several solutions for different initial conditions to observe the behavior of the board. This blog doesn't show the code used to solve the equations or plot the examples, but it can be found in the following [repository](https://github.com/cpierard/moguls_of_chaos).
+This system of equations can be solved numerically using a Runge-Kutta scheme, thus, our first objective is to integrate several solutions for different initial conditions to observe the behavior of the board.
+
+This blog doesn't show the code used to solve the equations or plot the examples, but it can be found in the following [repository](https://github.com/cpierard/moguls_of_chaos).
 
 # Boards down the slope!
 
-I used the fourth-order *Runge-Kutta method* as an integrator and we wrap it around a *solver*, to integrate the four variables of our system. Once the solver is working properly, we can compute the solutions for different boards.
+I used the fourth-order *Runge-Kutta method* as an integrator and wrap it around a *solver*, to integrate the four variables of the system. Once the solver is working properly, we can compute the solutions for different boards.
 
 **Example 1**
 
-For this example we set the initial conditions: $$x = 0.0$$, $$u = 3.5$$, $$v = 0$$, and $$y$$ it is randomly chosen form the interval $$[0,1]$$. The resulting trajectories can be seeing int the following figure.
+For this example we set the initial conditions for ten boards, with slight variations in their initial position: $$x = 0.0$$, $$u = 3.5$$, $$v = 0$$, and $$y$$ it is randomly chosen form the interval $$[0,1]$$, in a way that $$y$$ is different for every board. The resulting trajectories can be seeing int the following figure.
 
 <p class="aligncenter">
 <img src="/../assets/projects/moguls_of_chaos/bords_rand.png" width="30%" />
@@ -66,19 +65,19 @@ We can explore the behavior with other initial conditions, but this time we set 
 
 The figure above shows how the trajectories of the boards are practically the same until 20 m down the slope. After 20 m, some small variations appear in the trajectories of the boards, until they start growing bigger and bigger. Around 50 m down the slope, the trajectories diverge completely one from another, following very different paths.
 
-These boards are a perfect example of a system that is sensitive to initial conditions, i.e. that small perturbations or variations in the initial conditions can lead to totally different solutions at some time in the future, which is commonly known as **Chaos theory**.
+These boards are a perfect example of a system that is sensitive to initial conditions, i.e. that small perturbations or variations in the initial conditions can lead to totally different solutions at some time in the future, which is commonly known as **chaos theory**.
 
 From the trajectories of the boards is difficult to find regularities in the dynamics of this system, because the trajectories appear to behave randomly as they go down the slope. Therefore, in order to find regularity, we can use the velocities of the boards as they go down the slope. One of the tools that are very handy in the dynamical systems is the phase space plots, which basically consists of plotting the velocity of a system against its position. The problem is that our system has two spatial coordinates and two velocities components, which would make our phase space plot four-dimensional. Our brains can't handle a four-dimensional space, so we need to do some modifications to our system in order to reduce its dimensions to only three.
 
 # Sleds down the slope!
 
-To reduce the dimensions of our system, we can make the downslope velocity constant, or in the real world scenario, by equipping our board with some brakes and an engine so it can maintain a constant velocity while going down the pits or up the bumps, transforming it into a sled! In a mathematical sense, we say that $$\partial_t u = 0$$. This modification allows us to neglect the $u$ component of velocity and reduce the phase space three dimensions.
+To reduce the dimensions of our system, we can make the downslope velocity constant, or in the real world scenario, by equipping our board with some brakes and an engine so it can maintain a constant velocity while going down the pits or up the bumps, transforming it into a sled! In a mathematical sense, we say that $$\partial_t u = 0$$. This modification allows us to neglect the $$u$$ component of velocity and reduce the phase space to three dimensions.
 
 <p class="aligncenter">
 <img src="/../assets/projects/moguls_of_chaos/sleds.png" width="30%" />
 </p>
 
-The previous figure shows 10 sleds going down the slope, with initial conditions $$x = 0$$ m, $$y = [0, 0.1]$$ m, $$v = 2$$ m/s, and $$u = 3.5$$ m/s. We see that the system behaves chaotically even though the downslope speed is maintained. We also see how all the sleds reach the same downslope position.
+The previous figure shows eleven sleds going down the slope, with initial conditions $$x = 0$$ m, $$y = [0, 0.1]$$ m, $$v = 2$$ m/s, and $$u = 3.5$$ m/s. We see that the system behaves chaotically even though the downslope speed is maintained. We also see how all the sleds reach the same downslope position by the end of the simulation.
 
 # Sleds and strange attractors
 
@@ -90,7 +89,7 @@ We need to find a way to make our system compact while preserving the physics of
 <img src="/../assets/projects/moguls_of_chaos/shape_of_moguls.png" width="70%" />
 </p>
 
-Therefore, we can crop our domain in a tile (seeing in the figure below) from which we can reconstruct our full slope by placing consecutive tiles next to one another. In other words, we take this tile and set its boundaries to be periodic, so whatever exits the right side, re-enters the domain by the left side, and whatever exits the domain in by the lower boundary, re-enters by the top boundary. This slope-tile is defined in the domain: $$x \in [-5,5]$$ m and $$y \in [-2,2]$$ m.
+Therefore, we can crop our domain in a tile (figure below) from which we can reconstruct our full slope by placing consecutive tiles next to one another. In other words, we take this tile and set its boundaries to be periodic, so whatever exits the right side, re-enters the domain by the left side, and whatever exits the domain in by the lower boundary, re-enters by the top boundary. This slope-tile is defined in the domain: $$x \in [-5,5]$$ m and $$y \in [-2,2]$$ m.
 
 <p class="aligncenter">
 <img src="/../assets/projects/moguls_of_chaos/shape_of_moguls_compact.png" width="50%" />
@@ -98,29 +97,32 @@ Therefore, we can crop our domain in a tile (seeing in the figure below) from wh
 
 **The washing machine!**
 
-The main interest of this is to build a strange attractor. For this, we set a ensemble of sled all starting from $$x = 0$$m, but with random $$y$$ and cross slope velocities $$v$$, with $$u$$ set to 3.5m.
+Once that our system is compact, we can run some simulations to plot the phase space of the system. The thing is that if we run it for one sled, we will see only a point traveling with apparent random motions in the 3D domain. So, a good idea would be to simulate a good amount of sleds, an ensemble of sleds, with the same downward velocity and with random initial positions (inside the domain of the tile) and random cross slope velocities. This will fill the phase-space of points and we will be able to see how they evolve as the descend the moguls. The downside of this is that it will be really difficult for us to identify any structures in the phase space because basically, the phase space plot will consist of a turbulent soup of points that flows down weirdly.
+
+To cope with this visualization challenge, we can use another tool called **Poincaré maps**, in which we intersect the phase space with a plane transversal to the "flow", which in our case are planes defined by $$x = \text{constant}$$. However, we can take advantage of the feature that our sleds descend the slope with constant velocity $$u$$ to define our version of the Poincaré map. In other words, we set the downward velocity of the ensemble to be the same for all the members, but with different cross-slope positions and velocities, in a manner that they will form planes that go down the slope. This set-up will allow us to get rid of the $$x$$ coordinate in the phase space plot and only plot $$v$$ against $$y$$.
+
+For the first run, we set an ensemble of 8000 sleds, all starting from $$x = 0$$ m, but with random $$y$$, random cross slope velocities $$v$$ and with $$u = 3.5$$ m/s, for all the members. The result can be seen in the following animation.
 
 <p class="aligncenter">
 <img src="/../assets/projects/moguls_of_chaos/b_05.gif" width="50%" />
 </p>
 
+We can see that is like a [horseshoe map](https://en.wikipedia.org/wiki/Horseshoe_map), but also, it reminds me of a washing machine!
 
 # Routes from Chaos
+
+Now we see that the attractor changes if we change the height of the bumps in the slope, the parameter $$b$$. Especially, we can think that when $$b = 0$$ m, the sled will follow straight lines, which are non-chaotic, and as we increase $$b$$ these trajectories will transition to chaotic ones.
 
 <p class="aligncenter">
 <img src="/../assets/projects/moguls_of_chaos/b_01.gif" width="33%" />
 <img src="/../assets/projects/moguls_of_chaos/b_02.gif" width="33%" />
+</p>
+<p class="aligncenter">
 <img src="/../assets/projects/moguls_of_chaos/b_05.gif" width="33%" />
 <img src="/../assets/projects/moguls_of_chaos/b_06.gif" width="33%" />
 </p>
 
-Now we see that the attractor changes if we change the height of the bumps in the slope, the parameter $$b$$. Especially, we can think that when $$b = 0$$ m, the sled will follow straight lines, which are non-chaotic, and as we increase $$b$$ these trajectories will transition to chaotic ones.
-
-A practical way of visualizing this is by a bifurcation diagram, in which we plot the state of the system according to a parameter that drives the system.
-
-In the sled case, we can use the local maximum cross slope velocity, deleting the transient states, to visualize were the sled has a periodic behavior or a chaotic one
-
-We can see that there is axial symmetry concerning $$V = 0$$ m/s. This means that the bifurcation diagram can be drawn in either the negative side of the velocities or the positive side, creating regions without a point in the lower and upper part.
+A practical way of visualizing this is by a bifurcation diagram, in which we plot the state of the system according to a parameter that drives the system. We can use the local maximum cross slope velocity, deleting the transient states, to visualize where the sled has a periodic behavior or a chaotic one
 
 We can correct this is we consider only the cross slope speed, i.e. take the absolute value of $$V$$.
 
