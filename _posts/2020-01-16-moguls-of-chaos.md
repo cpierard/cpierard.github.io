@@ -10,15 +10,17 @@ permalink: /projects/moguls-of-chaos/
 }
 </style>
 
-Mogul skiing is a ski discipline that consists of descending a slope full of small regular bumps, where the skills and technique of skiers are tested to its full. Ed Lorenz, an outdoorsman and science legend, discovered that objects descending the moguls exhibit chaotic behavior. He built a small numerical model to explore the dynamics of an idealized board descending such type of slopes and exemplified some of the tools used for studying chaos.
+What are the moguls and why are they related to chaos? Mogul skiing is a ski discipline that consists of descending a slope full of small regular bumps, where the skills and technique of skiers are tested to its full. Ed Lorenz, an outdoorsman and science legend, discovered that objects descending the moguls exhibit chaotic behavior. He built a small numerical model to explore the dynamics of an idealized board descending such type of slopes and exemplified some of the tools used for characterizing chaos.
+
+This project aims to perform the small numerical experiment that Ed did and explained in his book *The Essence of Chaos*, to show how we can construct parsimonious models that exhibit chaos from real case phenomena.
+
+I started this small project two years ago after reading the above-mentioned book, but I couldn't finish it, and given that I am required to do a small project for my scientific computing class, I will use it as an opportunity to finish once and for all this mini-project. Also, this problem is an excuse to refresh my very rusty Julia skills and to keep my Python skills sharp. This post doesn't show the code used to solve the equations or plot the examples, but it can be found in the following [repository](https://github.com/cpierard/moguls_of_chaos).
 
 <p class="aligncenter">
-    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.independentsportsnews.com%2Fwp-content%2Fuploads%2F2018%2F12%2FFIS-Freestyle-Ski-World-Cup-in-Thaiwoo.jpg&f=1&nofb=1" width = "450" alt="centered image"/>
+    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.independentsportsnews.com%2Fwp-content%2Fuploads%2F2018%2F12%2FFIS-Freestyle-Ski-World-Cup-in-Thaiwoo.jpg&f=1&nofb=1" width = "650" alt="centered image"/>
 </p>
 
-This example was taken from the book **The Essence of Chaos** by *Edward Lorenz*. The aim of the model he presents in his book is showing how we can construct parsimonious models that exhibit chaos, from real case phenomena.
-
-The model consists of a board that goes down a regularly-bumpy slope or moguls without any control of the direction whatsoever. The dynamical system of this board is described by the system of ODE shown bellow
+The ski slope model consists of a board that goes down a regularly-bumpy slope or moguls without any control of the direction whatsoever. The dynamical system of this board is described by the system of ODEs shown bellow.
 
 $$\frac{dx}{dt} = u, \quad \frac{dx}{dt} = v, \quad \frac{dz}{dt} = w.$$
 
@@ -29,18 +31,16 @@ $$\frac{dx}{dt} = u, \quad \frac{dx}{dt} = v, \quad \frac{dz}{dt} = w.$$
 \frac{dv}{dt} &= -F \partial_y H - cv,
 \end{align}
 \begin{align}
-\frac{dw}{dt} &= -g + F - cw.
+\frac{dw}{dt} &= -g + F - cw,
 \end{align}
 
-$$\vec{x} = (x,y,z)$$ are the spacial coordinates and $$\vec{u} = (u,v,w)$$ are the components of the velocity of the board. $$H$$ is the shape of the slope that is parameterized by the following expression:
+where $$\vec{x} = (x,y,z)$$ are the spacial coordinates and $$\vec{u} = (u,v,w)$$ are the components of the velocity of the board. $$H$$ is the shape of the slope that is parameterized by the following expression:
 
 $$H(x,y) = -ax - b \ cos(px) \ cos(qy),$$
 
 where $$p$$ and $$q$$ are the spatial frequencies in which the bumps and pits alternate. The $$a$$ parameter is the angle of the slope and the $$b$$ parameter can be seen as the height of the bumps measured form the mean slope (remember this parameter because it will be important for the last section).
 
 This system of equations can be solved numerically using a Runge-Kutta scheme, thus, our first objective is to integrate several solutions for different initial conditions to observe the behavior of the board.
-
-This blog doesn't show the code used to solve the equations or plot the examples, but it can be found in the following [repository](https://github.com/cpierard/moguls_of_chaos).
 
 # Boards down the slope!
 
@@ -51,7 +51,7 @@ I used the fourth-order *Runge-Kutta method* as an integrator and wrap it around
 For this example we set the initial conditions for ten boards, with slight variations in their initial position: $$x = 0.0$$, $$u = 3.5$$, $$v = 0$$, and $$y$$ it is randomly chosen form the interval $$[0,1]$$, in a way that $$y$$ is different for every board. The resulting trajectories can be seeing int the following figure.
 
 <p class="aligncenter">
-<img src="/../assets/projects/moguls_of_chaos/bords_rand.png" width="30%" />
+<img src="/../assets/projects/moguls_of_chaos/bords_rand.png" width="35%" />
 </p>
 
 We can see how the boards follow similar trajectories, down until 10 m, where they start to diverge.
@@ -60,12 +60,12 @@ We can see how the boards follow similar trajectories, down until 10 m, where th
 We can explore the behavior with other initial conditions, but this time we set the $$y$$ position of 7 boards only 1 mm apart between the values $$[0.497, 0.503]$$ m, keeping the same values for $$x,u,v$$ used in the previous example.
 
 <p class="aligncenter">
-<img src="/../assets/projects/moguls_of_chaos/boards_1mm.png" width="30%" />
+<img src="/../assets/projects/moguls_of_chaos/boards_1mm.png" width="35%" />
 </p>
 
 The figure above shows how the trajectories of the boards are practically the same until 20 m down the slope. After 20 m, some small variations appear in the trajectories of the boards, until they start growing bigger and bigger. Around 50 m down the slope, the trajectories diverge completely one from another, following very different paths.
 
-These boards are a perfect example of a system that is sensitive to initial conditions, i.e. that small perturbations or variations in the initial conditions can lead to totally different solutions at some time in the future, which is commonly known as **chaos theory**.
+These boards are a perfect example of a system that is sensitive to initial conditions, i.e. that small perturbations or variations in the initial conditions can lead to totally different solutions at some time in the future, which is commonly known as **chaos**.
 
 From the trajectories of the boards is difficult to find regularities in the dynamics of this system, because the trajectories appear to behave randomly as they go down the slope. Therefore, in order to find regularity, we can use the velocities of the boards as they go down the slope. One of the tools that are very handy in the dynamical systems is the phase space plots, which basically consists of plotting the velocity of a system against its position. The problem is that our system has two spatial coordinates and two velocities components, which would make our phase space plot four-dimensional. Our brains can't handle a four-dimensional space, so we need to do some modifications to our system in order to reduce its dimensions to only three.
 
@@ -74,7 +74,7 @@ From the trajectories of the boards is difficult to find regularities in the dyn
 To reduce the dimensions of our system, we can make the downslope velocity constant, or in the real world scenario, by equipping our board with some brakes and an engine so it can maintain a constant velocity while going down the pits or up the bumps, transforming it into a sled! In a mathematical sense, we say that $$\partial_t u = 0$$. This modification allows us to neglect the $$u$$ component of velocity and reduce the phase space to three dimensions.
 
 <p class="aligncenter">
-<img src="/../assets/projects/moguls_of_chaos/sleds.png" width="30%" />
+<img src="/../assets/projects/moguls_of_chaos/sleds.png" width="35%" />
 </p>
 
 The previous figure shows eleven sleds going down the slope, with initial conditions $$x = 0$$ m, $$y = [0, 0.1]$$ m, $$v = 2$$ m/s, and $$u = 3.5$$ m/s. We see that the system behaves chaotically even though the downslope speed is maintained. We also see how all the sleds reach the same downslope position by the end of the simulation.
@@ -118,12 +118,12 @@ If we do a mental experiment and we set the height of the bumps to zero, we woul
 As a first approach to answer this question, we can perform a couple of simulations with different values of $$b$$ to have an idea of the behavior of the system. Arbitrarily I selected the values for $$b$$ to be $$0.11$$ m, $$0.2$$ m and $$0.66$$ m. The phase space plots of these simulations can be seen in the following animation (where the one with $$b = 0.5$$ m is also displayed).
 
 <p class="aligncenter">
-<img src="/../assets/projects/moguls_of_chaos/b_01.gif" width="33%" />
-<img src="/../assets/projects/moguls_of_chaos/b_02.gif" width="33%" />
+<img src="/../assets/projects/moguls_of_chaos/b_01.gif" width="45%" />
+<img src="/../assets/projects/moguls_of_chaos/b_02.gif" width="45%" />
 </p>
 <p class="aligncenter">
-<img src="/../assets/projects/moguls_of_chaos/b_05.gif" width="33%" />
-<img src="/../assets/projects/moguls_of_chaos/b_06.gif" width="33%" />
+<img src="/../assets/projects/moguls_of_chaos/b_05.gif" width="45%" />
+<img src="/../assets/projects/moguls_of_chaos/b_06.gif" width="45%" />
 </p>
 
 In the case with $$b = 0.11$$ m, we can see how the points collapse to a line that oscillates like a standing wave, with a node at the center, and which has no signals of chaos. For $$b=0.2$$ m, we can see more structure, but we see that as the sleds keep descending, the points collapse around two stable solutions. However, for $$b = 0.5$$ m and $$b = 0.6$$ m, we see the appearance of strange attractors, which shapes follow a loop that remains constant in time. From this runs, we can say that the firsts two cases don't exhibit chaos, but the last two did. In other words, as $$b$$ increases, the system becomes chaotic.
