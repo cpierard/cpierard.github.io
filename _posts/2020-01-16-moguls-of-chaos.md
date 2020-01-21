@@ -48,7 +48,7 @@ I used the fourth-order *Runge-Kutta method* as an integrator and wrap it around
 
 **Example 1**
 
-For this example we set the initial conditions for ten boards, with slight variations in their initial position: $$x = 0.0$$, $$u = 3.5$$, $$v = 0$$, and $$y$$ it is randomly chosen form the interval $$[0,1]$$, in a way that $$y$$ is different for every board. The resulting trajectories can be seeing int the following figure.
+For this example we set the initial conditions for ten boards, with slight variations in their initial position: $$x = 0.0$$ m, $$u = 3.5$$ m/s, $$v = 0$$ m/s, and $$y$$ it is randomly chosen form the interval $$[0,1]$$ m, in a way that $$y$$ is different for every board. The resulting trajectories can be seeing int the following figure.
 
 <p class="aligncenter">
 <img src="/../assets/projects/moguls_of_chaos/bords_rand.png" width="35%" />
