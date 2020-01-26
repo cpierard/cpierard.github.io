@@ -12,6 +12,7 @@ permalink: /cv/
 
 **M2 Environmental Fluid Mechanics.** <br />
 &nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2019 - 2020).<br />
+&nbsp;&nbsp;&nbsp;Thesis: _Turbulence abyssale au voisinage de Lucky Strike._ (In progress)
 
 **M1 Applied Mechanics.** <br />
 &nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2018 - 2019).<br />
@@ -29,7 +30,13 @@ permalink: /cv/
 -----------
 <br />
 
-**Institut des Géosciences de l’Environnement.**<br />
+**Laboratoire d’Océanographie Physique et Spatiale (LOPS).**<br />
+&nbsp;&nbsp;&nbsp;Brest. February 2020 - July 2020.<br />
+&nbsp;&nbsp;&nbsp;Master's research internship.<br />
+&nbsp;&nbsp;&nbsp;Project: _Turbulence abyssale au voisinage de Lucky Strike_. <br />
+&nbsp;&nbsp;&nbsp;Supervisors: _Pr. Guillaume Roullet_ and _Dr. Jonathan Gula_. <br />
+
+**Institut des Géosciences de l’Environnement (IGE).**<br />
 &nbsp;&nbsp;&nbsp;Grenoble. November 2018 - May 2019.<br />
 &nbsp;&nbsp;&nbsp;Master's research internship.<br />
 &nbsp;&nbsp;&nbsp;Project: _Measurement of Turbulence in Katabatic Winds on a Steep Slope_. <br />
