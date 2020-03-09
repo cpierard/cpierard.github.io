@@ -13,10 +13,3 @@ permalink: /about/
 <p align="justify"> My main area of interest is the study of large scale flows in the ocean and the atmosphere using numerical simulations and direct observations. I believe in the necessity of doing intelligent simplifications of problems and in constructing simple models to understand the underlying physics of certain processes of the climate system.</p>
 
 <p align="justify"> In my free time I like spending time outdoors and reading about exploration. I'm a diver, with a cave diving license, and an occasional climber. Lately, I've been rediscovering cycling and I love it!</p>
-
-<br />
-<br />
-
-# Current visitors
-
-<script type="text/javascript" src="//rf.revolvermaps.com/0/0/5.js?i=595dsbck6vy&amp;m=7&amp;c=ffc000&amp;cr1=ff0000&amp;rs=0&amp;as=50" async="async"></script>
