@@ -31,9 +31,9 @@ permalink: /cv/
 <br />
 
 **Laboratoire d’Océanographie Physique et Spatiale (LOPS).**<br />
-&nbsp;&nbsp;&nbsp;Brest. February 2020 - July 2020.<br />
+&nbsp;&nbsp;&nbsp;Brest. February 2020 - September 2020.<br />
 &nbsp;&nbsp;&nbsp;Master's research internship.<br />
-&nbsp;&nbsp;&nbsp;Project: _Turbulence abyssale au voisinage de Lucky Strike_. <br />
+&nbsp;&nbsp;&nbsp;Project: _Abyssal turbulence in the vicinity of Lucky Strike._. <br />
 &nbsp;&nbsp;&nbsp;Supervisors: _Pr. Guillaume Roullet_ and _Dr. Jonathan Gula_. <br />
 
 **Institut des Géosciences de l’Environnement (IGE).**<br />
@@ -84,6 +84,10 @@ permalink: /cv/
 # Workshops & Summer Schools
 ------------
 <br />
+**Bad Honnef Physics School on Physics of the Ocean**<br />
+&nbsp;&nbsp;&nbsp;Deutsche Physikalische Gesellschaft -- Bad Honnef, Germany.<br />
+&nbsp;&nbsp;&nbsp;_July 2020_.<br />
+&nbsp;&nbsp;&nbsp;_Might be cancelled due to coronavirus pandemic_.
 
 **Marine Master’s Summer School**<br />
 &nbsp;&nbsp;&nbsp;Royal Netherlands Institute for Sea Research (NIOZ) – Texel, Netherlands.<br />
