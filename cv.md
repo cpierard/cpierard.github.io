@@ -87,7 +87,7 @@ permalink: /cv/
 **Bad Honnef Physics School on Physics of the Ocean**<br />
 &nbsp;&nbsp;&nbsp;Deutsche Physikalische Gesellschaft -- Bad Honnef, Germany.<br />
 &nbsp;&nbsp;&nbsp;_July 2020_.<br />
-&nbsp;&nbsp;&nbsp;_Might be cancelled due to COVID-19_.
+&nbsp;&nbsp;&nbsp;_Might be postponed due to COVID-19_.
 
 **Marine Master’s Summer School**<br />
 &nbsp;&nbsp;&nbsp;Royal Netherlands Institute for Sea Research (NIOZ) – Texel, Netherlands.<br />
