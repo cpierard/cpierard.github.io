@@ -6,7 +6,7 @@ permalink: /about/
 
 <img src="/assets/lobos.jpg" width="320" style="float: right; margin-left: 25px; margin-right: 25px; margin-bottom: 25px;"/>
 
-<p align="justify"> I'm a student in the last year of the Master in Environmental Fluid Mechanics at the Université Grenoble Alpes, with the support of the ‘Make Our Planet Great Again’ scholarship on climate science, awarded by the Government of France.</p>
+<p align="justify"> I'm a student in the last year of the Master in Environmental Fluid Mechanics at the Université Grenoble Alpes, with the support of the *'Make Our Planet Great Again'* scholarship on climate science, awarded by the Government of France.</p>
 
 <p align="justify"> During my career, I have worked on research projects related to Atmospheric Physics and Physical Oceanography that involved numerical simulations, data processing and observational fieldwork.</p>
 
