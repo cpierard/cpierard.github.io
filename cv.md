@@ -12,7 +12,7 @@ permalink: /cv/
 
 **M2 Environmental Fluid Mechanics.** <br />
 &nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2019 - 2020).<br />
-&nbsp;&nbsp;&nbsp;Thesis: _Turbulence abyssale au voisinage de Lucky Strike._ (In progress)
+&nbsp;&nbsp;&nbsp;Thesis: _Abyssal turbulence in the vicinity of Lucky Strike._
 
 **M1 Applied Mechanics.** <br />
 &nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2018 - 2019).<br />
