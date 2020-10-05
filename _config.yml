@@ -19,9 +19,9 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Claudio Pierard
-email: cl.pierard (at) gmail.com
+email: cl.pierard ( a t ) gmail [ . ] com
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm a Master's student in Environmental Fluid Mechanics at the University Grenoble Alpes, with a deep interest in the dynamics of the ocean and atmosphere.
+  I'm a PhD student in Physical Oceanography at Utrecht University, studying the tranport of nanoplastics in the ocean.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: cpierard

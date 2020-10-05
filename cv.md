@@ -10,6 +10,10 @@ permalink: /cv/
 -----------
 <br />
 
+**PhD Student in Physical Oceanography** <br />
+&nbsp;&nbsp;&nbsp;Utrecht University (2020 - 2024).<br />
+&nbsp;&nbsp;&nbsp; Project: _Transport of nanoplastics in the ocean._
+
 **M2 Environmental Fluid Mechanics.** <br />
 &nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2019 - 2020).<br />
 &nbsp;&nbsp;&nbsp;Thesis: _Abyssal turbulence in the vicinity of Lucky Strike._
@@ -22,9 +26,9 @@ permalink: /cv/
 &nbsp;&nbsp;&nbsp;Universidad Nacional Autónoma de México (2011 - 2017). <br />
 &nbsp;&nbsp;&nbsp;Thesis: _Ventilation Coefficients in the Valley of Mexico._
 
-**Propaedeutic in Mathematics and Physics specialized in Engineering.** <br />
+<!--**Propaedeutic in Mathematics and Physics specialized in Engineering.** <br />
 &nbsp;&nbsp;&nbsp;Université Catholique de Louvain (2010 - 2011).<br />
-<br />
+<br />-->
 
 # Research Experience
 -----------
@@ -123,10 +127,10 @@ permalink: /cv/
 - IELTS (British Council).<br />
 &nbsp;&nbsp;&nbsp;Score: 7/9. *November 2019*.<br />
 
-- TOEFL iBT (ETS).<br />
+<!-- - TOEFL iBT (ETS).<br />
 &nbsp;&nbsp;&nbsp;Score: 99/120. *March 2018*.<br />
 
-<br />
+<br /> -->
 
 # Skills
 ------------
