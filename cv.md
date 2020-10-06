@@ -10,9 +10,9 @@ permalink: /cv/
 -----------
 <br />
 
-**PhD Student in Physical Oceanography** <br />
+<!--**PhD Student in Physical Oceanography** <br />
 &nbsp;&nbsp;&nbsp;Utrecht University (2020 - 2024).<br />
-&nbsp;&nbsp;&nbsp; Project: _Transport of nanoplastics in the ocean._
+&nbsp;&nbsp;&nbsp; Project: _Transport of nanoplastics in the ocean._/>-->
 
 **M2 Environmental Fluid Mechanics.** <br />
 &nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2019 - 2020).<br />
@@ -33,6 +33,12 @@ permalink: /cv/
 # Research Experience
 -----------
 <br />
+
+**Institute for Marine and Atmospheric research Utrecht (IMAU).**<br />
+&nbsp;&nbsp;&nbsp;Utrecht. October 2020 - present.<br />
+&nbsp;&nbsp;&nbsp;PhD Researcher.<br />
+&nbsp;&nbsp;&nbsp;Project: _Nanoplastics: investigating the formation, presence, and distribution in aquatic environments_. <br />
+&nbsp;&nbsp;&nbsp;Supervisor: _Dr. Erik van Sebille_. <br />
 
 **Laboratoire d’Océanographie Physique et Spatiale (LOPS).**<br />
 &nbsp;&nbsp;&nbsp;Brest. February 2020 - September 2020.<br />
