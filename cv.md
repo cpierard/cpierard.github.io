@@ -3,7 +3,7 @@ layout: page
 title: Curriculum Vitae
 permalink: /cv/
 ---
-<a href="/assets/CV_Pierard.pdf" style="float: right;">Download</a>
+<!--<a href="/assets/CV_Pierard.pdf" style="float: right;">Download</a>-->
 
 
 # Education
@@ -44,7 +44,7 @@ permalink: /cv/
 &nbsp;&nbsp;&nbsp;Brest. February 2020 - September 2020.<br />
 &nbsp;&nbsp;&nbsp;Master's research internship.<br />
 &nbsp;&nbsp;&nbsp;Project: _Abyssal turbulence in the vicinity of Lucky Strike._. <br />
-&nbsp;&nbsp;&nbsp;Supervisors: _Pr. Guillaume Roullet_ and _Dr. Jonathan Gula_. <br />
+&nbsp;&nbsp;&nbsp;Supervisors: _Prof. Guillaume Roullet_ and _Dr. Jonathan Gula_. <br />
 
 **Institut des Géosciences de l’Environnement (IGE).**<br />
 &nbsp;&nbsp;&nbsp;Grenoble. November 2018 - May 2019.<br />
@@ -94,9 +94,6 @@ permalink: /cv/
 # Workshops & Summer Schools
 ------------
 <br />
-**Bad Honnef Physics School on Physics of the Ocean**<br />
-&nbsp;&nbsp;&nbsp;Deutsche Physikalische Gesellschaft -- Bad Honnef, Germany.<br />
-&nbsp;&nbsp;&nbsp;_July 2020 (postponed to 2021 due to COVID-19)_.<br />
 
 **Marine Master’s Summer School**<br />
 &nbsp;&nbsp;&nbsp;Royal Netherlands Institute for Sea Research (NIOZ) – Texel, Netherlands.<br />
@@ -149,4 +146,4 @@ permalink: /cv/
 &nbsp;&nbsp;&nbsp;Dutch (beginner). <br />
 
 **Programming Languages**<br />
-&nbsp;&nbsp;&nbsp;_Python, Julia, Git, Bash, Matlab (avoid at all costs)_.
+&nbsp;&nbsp;&nbsp;_Python and Julia_.
