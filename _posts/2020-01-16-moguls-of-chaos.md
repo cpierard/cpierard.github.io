@@ -14,7 +14,7 @@ What are the moguls and why are they related to chaos? Mogul skiing is a ski dis
 
 This project aims to perform the small numerical experiment that Ed did and explained in his book *The Essence of Chaos*, to show how we can construct parsimonious models that exhibit chaos from real case phenomena.
 
-I started this small project two years ago after reading the above-mentioned book, but I couldn't finish it, and given that I am required to do a small project for my scientific computing class, I will use it as an opportunity to finish once and for all this mini-project. Also, this problem is an excuse to refresh my very rusty Julia skills and to keep my Python skills sharp. This post doesn't show the code used to solve the equations or plot the examples, but it can be found in the following [repository](https://github.com/cpierard/moguls_of_chaos).
+I started this small project two years ago after reading the above-mentioned book, but I couldn't finish it, and given that I am required to do a small project for my scientific computing class, I will use it as an opportunity to finish once and for all this mini-project. Also, this problem is an excuse to refresh my very rusty Julia skills and to keep my Python skills sharp. This post doesn't show the code used to solve the equations or plot the examples, but it can be found in the following [repository](https://snowgoing.com/wp-content/uploads/2019/09/mogul_race.png).
 
 <p class="aligncenter">
     <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.independentsportsnews.com%2Fwp-content%2Fuploads%2F2018%2F12%2FFIS-Freestyle-Ski-World-Cup-in-Thaiwoo.jpg&f=1&nofb=1" width = "650" alt="centered image"/>
