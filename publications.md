@@ -1,9 +1,7 @@
 ---
 layout: page
-title: Publications
+title: Publications 🌶️
 permalink: /publications/
 ---
 
-### Submitted
-
-C. Pierard, D. Bassotto, F. Meirer, E. van Seville. **Attribution of River-Sourced Floating Plastic in the South Atlantic Ocean Using Bayesian Inference.**(Submitted to JGR:Oceans)[[Preprint]](https://doi.org/10.1002/essoar.10508055.2)
+**C.M. Pierard**, D. Bassotto, F. Meirer and E. van Sebille (2022). *Attribution of Plastic Sources Using Bayesian Inference: Application to River-Sourced Floating Plastic in the South Atlantic Ocean.* Frontiers of Marine Science. [Doi:10.3389/fmars.2022.925437](https://doi.org/10.3389/fmars.2022.925437).

@@ -1,49 +1,40 @@
 ---
 layout: page
-title: Curriculum Vitae
+title: CV 📜
 permalink: /cv/
 ---
-<!--<a href="/assets/CV_Pierard.pdf" style="float: right;">Download</a>-->
+<a href="/assets/CV_Pierard.pdf" style="float: right;">Download</a>
 
 
 # Education
 -----------
-<br />
 
-<!--**PhD Student in Physical Oceanography** <br />
-&nbsp;&nbsp;&nbsp;Utrecht University (2020 - 2024).<br />
-&nbsp;&nbsp;&nbsp; Project: _Transport of nanoplastics in the ocean._/>-->
+**Ph.D. Candidate Physical Oceanography** <br />
+&nbsp;&nbsp;&nbsp;Utrecht University (2020 - present).<br />
 
 **M2 Environmental Fluid Mechanics.** <br />
 &nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2019 - 2020).<br />
-&nbsp;&nbsp;&nbsp;Thesis: _Abyssal turbulence in the vicinity of Lucky Strike._
 
 **M1 Applied Mechanics.** <br />
 &nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2018 - 2019).<br />
-&nbsp;&nbsp;&nbsp;Thesis: _Measurements of Turbulence in Katabatic Winds on a Steep Slope._
 
 **B.Sc. Physics.** <br />
 &nbsp;&nbsp;&nbsp;Universidad Nacional Autónoma de México (2011 - 2017). <br />
-&nbsp;&nbsp;&nbsp;Thesis: _Ventilation Coefficients in the Valley of Mexico._
 
-<!--**Propaedeutic in Mathematics and Physics specialized in Engineering.** <br />
-&nbsp;&nbsp;&nbsp;Université Catholique de Louvain (2010 - 2011).<br />
-<br />-->
 
-# Research Experience
+# Experience
 -----------
-<br />
 
 **Institute for Marine and Atmospheric research Utrecht (IMAU).**<br />
 &nbsp;&nbsp;&nbsp;Utrecht. October 2020 - present.<br />
 &nbsp;&nbsp;&nbsp;PhD Researcher.<br />
-&nbsp;&nbsp;&nbsp;Project: _Nanoplastics: investigating the formation, presence, and distribution in aquatic environments_. <br />
-&nbsp;&nbsp;&nbsp;Supervisor: _Dr. Erik van Sebille_. <br />
+&nbsp;&nbsp;&nbsp;Project: _Nanoplastics: investigating the formation, presence, and distribution in aquatic environments_. <a href="https://nanoplastics.org/" style="float: centre;">Link 🔗</a><br />
+&nbsp;&nbsp;&nbsp;Supervisor: _Prof. Erik van Sebille_. <br />
 
 **Laboratoire d’Océanographie Physique et Spatiale (LOPS).**<br />
 &nbsp;&nbsp;&nbsp;Brest. February 2020 - September 2020.<br />
 &nbsp;&nbsp;&nbsp;Master's research internship.<br />
-&nbsp;&nbsp;&nbsp;Project: _Abyssal turbulence in the vicinity of Lucky Strike._. <br />
+&nbsp;&nbsp;&nbsp;Project: _Abyssal turbulence in the vicinity of Lucky Strike._ <a href="/projects/luckystrike/" style="float: centre;">Link 🔗</a><br />
 &nbsp;&nbsp;&nbsp;Supervisors: _Prof. Guillaume Roullet_ and _Dr. Jonathan Gula_. <br />
 
 **Institut des Géosciences de l’Environnement (IGE).**<br />
@@ -61,7 +52,7 @@ permalink: /cv/
 **Center for Atmospheric Sciences, UNAM.**<br />
 &nbsp;&nbsp;&nbsp;Mexico City. April 2017 - November 2017.<br />
 &nbsp;&nbsp;&nbsp;Undergraduate Research Assistant, Laboratory of Geophysical Fluids.<br />
-&nbsp;&nbsp;&nbsp;Project: _Numerical simulations of convection in a stratified fluid using the Dedalus framework_.<br />
+&nbsp;&nbsp;&nbsp;Project: _Numerical simulations of convection in a stratified fluid_. <a href="/projects/convection/" style="float: centre;">Link 🔗</a><br />
 &nbsp;&nbsp;&nbsp;Supervisor: _Dr. Angel Ruiz-Angulo_.<br />
 
 **CICESE**<br />
@@ -69,51 +60,60 @@ permalink: /cv/
 &nbsp;&nbsp;&nbsp;Field Assistant, Glider deployment in the Gulf of Mexico.<br />
 &nbsp;&nbsp;&nbsp;Project: _Oceanographic Monitoring Group with Gliders (GMOG)_.<br />
 &nbsp;&nbsp;&nbsp;Supervisor: _Dr. Angel Ruiz-Angulo_.<br />
-<br />
+
 
 # Awards
 ------------
-<br />
+
 **Make Our Planet Great Again Laureate**<br />
 &nbsp;&nbsp;&nbsp;_Master’s Excellence Grant for Climate Science and Research_.<br />
 &nbsp;&nbsp;&nbsp;2018-2020.<br />
 
-<br />
+
+**Blue-Cloud Hackathon Winner Team**<br />
+&nbsp;&nbsp;&nbsp;_EU 25,000 for developing the Sea-Clearly tool for tracking plastic pollution reaching aquaculture farms._<br />
+&nbsp;&nbsp;&nbsp;February 2022. <a href="http://seaclearly.io/" style="float: centre;">seaclearly.io 🔗</a> <a href="https://hackathon.blue-cloud.org/" style="float: centre;">Blue-Cloud 🔗</a><br />
+
 
 # Conferences
 ------------
-<br />
 
 **Annual Reunion of the Mexican Geophysical Union**<br />
 &nbsp;&nbsp;&nbsp;"Study of the Planetary Boundary Layer over Mexico City during the inversion layers period."<br />
-&nbsp;&nbsp;&nbsp;_A. Burgos, C. Pierard, J. Garc ́ıa, A. Ruiz-Angulo, M. Grutter, A. Bezanilla_.<br />
-&nbsp;&nbsp;&nbsp;November 2017 (Poster).<br />
+&nbsp;&nbsp;&nbsp;November 2017.<br />
 
-<br />
+**Nederlands Aardwetenschappelijk Congres (NAC) - NWO**<br />
+&nbsp;&nbsp;&nbsp;"Attribution of River-Sourced Floating Plastic in the South Atlantic Ocean Using Bayesian Inference."<br />
+&nbsp;&nbsp;&nbsp;September 2022.<br />
 
-# Workshops & Summer Schools
+**MICRO 2022 - Plastic Pollution from Macro to Nano**<br />
+&nbsp;&nbsp;&nbsp;"Backtracking nanoplastics found in the abyssal South Atlantic using Lagrangian simulations with fragmentation."<br />
+&nbsp;&nbsp;&nbsp;November 2022.<br />
+
+
+# Workshops
 ------------
-<br />
+
+__*Bad Honnef Physics School on Physics of the Ocean__<br />
+&nbsp;&nbsp;&nbsp;Deutsche Physikalische Gesellschaft – *Cancelled due to COVID-19.<br />
+&nbsp;&nbsp;&nbsp;_July 2020_.<br />
 
 **Marine Master’s Summer School**<br />
 &nbsp;&nbsp;&nbsp;Royal Netherlands Institute for Sea Research (NIOZ) – Texel, Netherlands.<br />
-&nbsp;&nbsp;&nbsp;Project: _Tidal Dynamics of the Marsdiep Channel_.<br />
 &nbsp;&nbsp;&nbsp;_July 2019_.<br />
 
 **Summer School in Atmospheric Sciences**<br />
 &nbsp;&nbsp;&nbsp;UNAM – Juriquilla, Mexico.<br />
 &nbsp;&nbsp;&nbsp;_June 2017_.<br />
 
-**JuliaCon 2016 (attendee)**<br />
+**JuliaCon 2016**<br />
 &nbsp;&nbsp;&nbsp;MIT – Cambridge, MA.<br />
 &nbsp;&nbsp;&nbsp;_June 2016_.<br />
-<br />
 
-# Courses & Certifications
+
+# Certifications
 ------------
-<br />
 
-**Online Courses**<br />
 - _Nonlinear Dynamics: Mathematical and Computational Approaches_.<br />
 &nbsp;&nbsp;&nbsp;Santa Fe Institute. [Complexity Explorer](https://www.complexityexplorer.org/courses/60-nonlinear-dynamics-mathematical-and-computational-approaches-fall-2016/certificates/3888316416.pdf) (December 2016).<br />
 - _12.340x: Global Warming Science_.<br />
@@ -124,20 +124,16 @@ permalink: /cv/
 &nbsp;&nbsp;&nbsp;European Space Agency. [FutureLearn](https://www.futurelearn.com/statements/onwhpfg?utm_campaign=Share+Links&utm_medium=futurelearn-statement&utm_source=linkedin) (January 2016).<br />
 - _Causes of Climate Change_.<br />
 &nbsp;&nbsp;&nbsp;University of Bergen. [FutureLearn](https://www.futurelearn.com/statements/jk2fktn) (October 2015).<br />
-
-**English Courses and Certifications**<br />
-
 - IELTS (British Council).<br />
 &nbsp;&nbsp;&nbsp;Score: 7/9. *November 2019*.<br />
+- Full Cave Diver.<br />
+Technical Diving International. *March 2022*.<br />
+- Sidemount Diver.<br />
+Technical Diving International. *March 2022*.<br />
 
-<!-- - TOEFL iBT (ETS).<br />
-&nbsp;&nbsp;&nbsp;Score: 99/120. *March 2018*.<br />
-
-<br /> -->
 
 # Skills
 ------------
-<br />
 
 **Languages**<br />
 &nbsp;&nbsp;&nbsp;Spanish (native).<br />
