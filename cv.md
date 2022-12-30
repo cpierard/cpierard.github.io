@@ -9,7 +9,7 @@ permalink: /cv/
 # Education
 -----------
 
-**Ph.D. Candidate Physical Oceanography** <br />
+**Ph.D. Candidate Physical Oceanography.** <br />
 &nbsp;&nbsp;&nbsp;Utrecht University (2020 - present).<br />
 
 **M2 Environmental Fluid Mechanics.** <br />
@@ -55,7 +55,7 @@ permalink: /cv/
 &nbsp;&nbsp;&nbsp;Project: _Numerical simulations of convection in a stratified fluid_. <a href="/projects/convection/" style="float: centre;">Link 🔗</a><br />
 &nbsp;&nbsp;&nbsp;Supervisor: _Dr. Angel Ruiz-Angulo_.<br />
 
-**CICESE**<br />
+**CICESE.**<br />
 &nbsp;&nbsp;&nbsp;Tampico. November 2017.<br />
 &nbsp;&nbsp;&nbsp;Field Assistant, Glider deployment in the Gulf of Mexico.<br />
 &nbsp;&nbsp;&nbsp;Project: _Oceanographic Monitoring Group with Gliders (GMOG)_.<br />
@@ -65,12 +65,12 @@ permalink: /cv/
 # Awards
 ------------
 
-**Make Our Planet Great Again Laureate**<br />
+**Make Our Planet Great Again Laureate.**<br />
 &nbsp;&nbsp;&nbsp;_Master’s Excellence Grant for Climate Science and Research_.<br />
 &nbsp;&nbsp;&nbsp;2018-2020.<br />
 
 
-**Blue-Cloud Hackathon Winner Team**<br />
+**Blue-Cloud Hackathon Winner Team.**<br />
 &nbsp;&nbsp;&nbsp;_EU 25,000 for developing the Sea-Clearly tool for tracking plastic pollution reaching aquaculture farms._<br />
 &nbsp;&nbsp;&nbsp;February 2022. <a href="http://seaclearly.io/" style="float: centre;">seaclearly.io 🔗</a> <a href="https://hackathon.blue-cloud.org/" style="float: centre;">Blue-Cloud 🔗</a><br />
 
@@ -78,15 +78,15 @@ permalink: /cv/
 # Conferences
 ------------
 
-**Annual Reunion of the Mexican Geophysical Union**<br />
+**Annual Reunion of the Mexican Geophysical Union.**<br />
 &nbsp;&nbsp;&nbsp;"Study of the Planetary Boundary Layer over Mexico City during the inversion layers period."<br />
 &nbsp;&nbsp;&nbsp;November 2017.<br />
 
-**Nederlands Aardwetenschappelijk Congres (NAC) - NWO**<br />
+**Nederlands Aardwetenschappelijk Congres (NAC) - NWO.**<br />
 &nbsp;&nbsp;&nbsp;"Attribution of River-Sourced Floating Plastic in the South Atlantic Ocean Using Bayesian Inference."<br />
 &nbsp;&nbsp;&nbsp;September 2022.<br />
 
-**MICRO 2022 - Plastic Pollution from Macro to Nano**<br />
+**MICRO 2022 - Plastic Pollution from Macro to Nano.**<br />
 &nbsp;&nbsp;&nbsp;"Backtracking nanoplastics found in the abyssal South Atlantic using Lagrangian simulations with fragmentation."<br />
 &nbsp;&nbsp;&nbsp;November 2022.<br />
 
@@ -94,23 +94,29 @@ permalink: /cv/
 # Workshops
 ------------
 
-__*Bad Honnef Physics School on Physics of the Ocean__<br />
+__*Bad Honnef Physics School on Physics of the Ocean.__<br />
 &nbsp;&nbsp;&nbsp;Deutsche Physikalische Gesellschaft – *Cancelled due to COVID-19.<br />
 &nbsp;&nbsp;&nbsp;_July 2020_.<br />
 
-**Marine Master’s Summer School**<br />
+**Marine Master’s Summer School.**<br />
 &nbsp;&nbsp;&nbsp;Royal Netherlands Institute for Sea Research (NIOZ) – Texel, Netherlands.<br />
 &nbsp;&nbsp;&nbsp;_July 2019_.<br />
 
-**Summer School in Atmospheric Sciences**<br />
+**Summer School in Atmospheric Sciences.**<br />
 &nbsp;&nbsp;&nbsp;UNAM – Juriquilla, Mexico.<br />
 &nbsp;&nbsp;&nbsp;_June 2017_.<br />
 
-**JuliaCon 2016**<br />
+**JuliaCon 2016.**<br />
 &nbsp;&nbsp;&nbsp;MIT – Cambridge, MA.<br />
 &nbsp;&nbsp;&nbsp;_June 2016_.<br />
 
 
+# Teaching
+------------
+
+__Teaching Assistant of Numerical Methods for Physicists and Astronomers (NS-256B).__<br />
+&nbsp;&nbsp;&nbsp;Faculty of Physics, Utrecht University.<br />
+&nbsp;&nbsp;&nbsp;_2020-21, 2021-22, 2022-23._<br />
 # Certifications
 ------------
 
@@ -124,12 +130,12 @@ __*Bad Honnef Physics School on Physics of the Ocean__<br />
 &nbsp;&nbsp;&nbsp;European Space Agency. [FutureLearn](https://www.futurelearn.com/statements/onwhpfg?utm_campaign=Share+Links&utm_medium=futurelearn-statement&utm_source=linkedin) (January 2016).<br />
 - _Causes of Climate Change_.<br />
 &nbsp;&nbsp;&nbsp;University of Bergen. [FutureLearn](https://www.futurelearn.com/statements/jk2fktn) (October 2015).<br />
-- IELTS (British Council).<br />
-&nbsp;&nbsp;&nbsp;Score: 7/9. *November 2019*.<br />
-- Full Cave Diver.<br />
-Technical Diving International. *March 2022*.<br />
-- Sidemount Diver.<br />
-Technical Diving International. *March 2022*.<br />
+- _IELTS._<br />
+&nbsp;&nbsp;&nbsp;British Council. Score: 7/9. *November 2019*.<br />
+- _Full Cave Diver._<br />
+&nbsp;&nbsp;&nbsp;Technical Diving International. *March 2022*.<br />
+- _Sidemount Diver._<br />
+&nbsp;&nbsp;&nbsp;Technical Diving International. *March 2022*.<br />
 
 
 # Skills
