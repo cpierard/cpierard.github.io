@@ -71,7 +71,7 @@ It is convenient to compute the PSD of a signal to see the different forcings pr
 For both years, we see that both power spectra have clear peaks that correspond to the different tidal constituents, confirming that there is an amplification of the internal tide in the MORs as observed by Vic et al. (2018). In particular, just before the inertial frequency f there are peaks that match the lunar diurnal tidal frequencies K1 and OO1. Separating the geostrophic eddy band with the internal wave band, we see the inertial peak which is larger for 2012. In the internal wave band ($$\sigma > f$$) we see peaks that correspond to the internal tides. In particular, we see that the largest and broader peak coincides with the principal lunar semidiurnal constituent M2. Also, we identify the M4 and M6 semidiurnal peaks which contribute less to the HKE. At the higher frequencies, the resolution of the current meter doesn’t allow the spectrum to reach the $$N$$ frequency where the breaking of the internal waves occurs. For both bands, the slope of the estimated power law is −1.02 for 2012 and −1.12 for 2017. The slopes in the internal wave band are −0.75 for 2012 and −0.74 for 2017, which are similar to the −0.81 slope reported by Ferrari and Wunsch (2009) and Fu et al. (1982) at 1500 m deep, 27°N in the MAR. The HKE from both years are similar in their estimated power laws, despite their slightly different topographical placing, suggesting that there is no variation between years.
 
 
-## Temperature Power Spectral Density Estimates
+### Temperature Power Spectral Density Estimates
 
 Following the same method used to compute the HKE, we calculated the power spectral estimates from the temperature sensors in the mooring. These sensors were predominant in the line throughout all years, making the temperature PSD estimates plots very numerous to display all in this section.
 
@@ -91,11 +91,11 @@ Following the same method used to compute the HKE, we calculated the power spect
 We selected the 2018 measurements, recorded with an RBR, as a representative year for the temperature, because it had the largest number of sensors per depth installed in the line and it displayed a similar PSD from other years at the same levels. For this year, we estimated the PSD for all depths, which can be seen in Figure 4. At the top figure, we see how the different colors represent the PSD from different temperatures, and we note that the power of the signal decreases as the depth increases. In the geostrophic eddy band ($$\sigma < f$$), we see how the power spectra are larger for the shallower instruments such as −800 m to 1300 m, between $$10^{−1}$$ cpd to $$1$$ cpd, this might be due to the presence of mesoscale eddies, which structure can reach these depths. In the inertial band, we see that the spectrum is dominated by the M2 peak within the order of $$10^{−2}$$  º$$C^2/cpd$$, followed by the M4 and M6 peaks, decreasing in power as frequency increases. The Nmin and Nmax are the Brunt-Vaisala frequencies for the bottom depth (−1600m) and the top depth (−800m) respectively. Between these two frequencies, we don’t see the signature of wave breaking, instead, we see a continuous decaying of the spectrum and a convergence of all the PSDs. Although, in the frequency range $$10^1$$ cpd to $$10^2$$ cpd, we see the broad peak at $$38$$ cpd for depths of 800 m, 900 m and 1200 m, being smoothed as the depth increases. In the bottom panel of Figure 4, we see a zoom at the lower spectrum of the inertial frequency band. Between the semidiurnal peaks, we see that the PSD estimates have a higher value for the shallower measurements than for the deeper ones, this is due to the friction from the seafloor that slows the water movements. Also, there is no inertial peak at $$\sigma ∼ f$$ and the lunar diurnal peaks are also not present.
 
 
-# Acknowledgments
+## Acknowledgments
 Thanks to Prof. Guillaume Roullet and Dr. Jonathan Gula for supervising me during this work.
-This post it's just an excerpt of my master thesis. 
+This post it's just an excerpt of my master thesis.
 
-# References
+## References
 
 - Colaço, A., Blandin, J., Cannat, M., Carval, T., Chavagnac, V., Connelly, D., Fabian, M., Ghiron, S., Goslin, J., Miranda, J., et al. (2011). Momar-d: a technological challenge to monitor the dynamics of the lucky strike vent ecosystem. ICES Journal of Marine Science, 68(2):416–424.
 - Ferrari, R. and Wunsch, C. (2009). Ocean circulation kinetic energy: Reservoirs, sources, and sinks. Annual Review of Fluid Mechanics, 41.

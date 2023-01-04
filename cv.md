@@ -34,7 +34,7 @@ permalink: /cv/
 **Laboratoire d’Océanographie Physique et Spatiale (LOPS).**<br />
 &nbsp;&nbsp;&nbsp;Brest. February 2020 - September 2020.<br />
 &nbsp;&nbsp;&nbsp;Master's research internship.<br />
-&nbsp;&nbsp;&nbsp;Project: _Abyssal turbulence in the vicinity of Lucky Strike._ <a href="/projects/luckystrike/" style="float: centre;">Link 🔗</a><br />
+&nbsp;&nbsp;&nbsp;Project: _Abyssal turbulence in the vicinity of Lucky Strike._ <a href="/projects/luckystrike/" style="float: centre;">Lucky Strike 🔗</a><a href="/projects/plume/" style="float: centre;"> LES plume 🔗</a><br />
 &nbsp;&nbsp;&nbsp;Supervisors: _Prof. Guillaume Roullet_ and _Dr. Jonathan Gula_. <br />
 
 **Institut des Géosciences de l’Environnement (IGE).**<br />
