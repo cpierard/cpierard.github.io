@@ -12,7 +12,7 @@ Lucky Strike is a vent field or system that was discovered by chance by the Fren
 
 The vent field is located in the Mid Atlantic Ridge (MAR) between 37°3′N and 37°37′N, 400 km southwest of the Azores Islands, and the Azores Triple Junction (see Figure 1). The rift valley where the vent field is located is known as the Lucky Strike Segment. This segment is 60 km long and 10 km to 15 km wide, bounded by 1000 m high axial valley walls. At its center, the segment shallows (~1700 m deep) due to the presence of the Lucky Strike volcano (Ondréas et al., 2009).
 
-Lucky Strike is one of the largest axial volcano within the rift valley on the MAR (see Figure 1) and hosts the highest diversity of species of all the vent systems in slow-spreading ridges. At its center, in the caldera, there is a young solidified lava lake about 200 m wide, which is the place that has hydrothermal activity. In Lucky Strike there are 30 vents sites distributed over a 1 km2 area (Karson et al., 2015). The plume has an estimated height of ∼100 m, with a total heat flux of (3800 ± 1200) MW (Jean-Baptiste et al., 2008)
+Lucky Strike is one of the largest axial volcano within the rift valley on the MAR (see Figure 1) and hosts the highest diversity of species of all the vent systems in slow-spreading ridges. At its center, in the caldera, there is a young solidified lava lake about 200 m wide, which is the place that has hydrothermal activity. In Lucky Strike there are 30 vents sites distributed over a 1 km2 area (Karson et al., 2015). The plume has an estimated height of ∼100 m, with a total heat flux of 3800 MW ± 1200 MW (Jean-Baptiste et al., 2008)
 
 <style>
 .aligncenter {
@@ -37,8 +37,8 @@ The observatory is maintained every year during the MoMARSAT cruises, in which p
 }
 </style>
 <p class="aligncenter">
-    <img src="/../assets/projects/vents/mooring_loc.png" width = "300" alt="centered image"/>
     <img src="/../assets/projects/vents/real_position.png" width = "300" alt="centered image"/>
+    <img src="/../assets/projects/vents/mooring_loc.png" width = "300" alt="centered image"/>
 </p>
 
 ###### Figure 2: The mooring vertical and horizontal positions. The left panel shows the estimated real depth of all the instruments and the right panel shows the estimated location of the mooring, with respect to the Lucky Strike volcano. The pink stars indicate the position of the mooring each year.
@@ -52,7 +52,7 @@ As part of the signal analysis, we estimated the power spectral density (PSD) of
 
 ### Horizontal kinetic energy spectrum
 
-It is convenient to compute the PSD of a signal to see the different forcings present at this particular location. We calculated this with the speed recorded with the AquaDopp instrument, obtaining the horizontal kinetic energy (HKE) spectra for all years with available data. To simplify the analysis, we selected the 2012 and 2017 HKE spectrum estimates, based on their similarity with the other years. These estimates are shown in Figure 4.3. We can classify the spectrum in frequency bands according to the type of motions occurring in the different time ranges. The first region corresponds to frequencies smaller than a period of 100 days for 2017 and 40 days for 2012. In this band, both curves display a nearly white flat band. The following band corresponds to the geostrophic eddy range and it is defined between the period 100 days up to the inertial frequency f, which is the local Coriolis frequency defined as f = 2Ωsinθ. In this band, the HKE estimate falls in an approximate power-law σ−b (where σ is the frequency and b is a constant), this band is geostrophically balanced, bellow the surface boundary layer. The internal waves band is located at frequencies between f < σ < N (where N is the Brunt-Vaisala frequency). This band follows as well an approximate power law and is controlled by gravity wave dynamics. Finally, the frequency band σ > N is dominated by small scale turbulence that results from the breaking of internal waves.
+It is convenient to compute the PSD of a signal to see the different forcings present at this particular location. We calculated this with the speed recorded with the AquaDopp instrument, obtaining the horizontal kinetic energy (HKE) spectra for all years with available data. To simplify the analysis, we selected the 2012 and 2017 HKE spectrum estimates, based on their similarity with the other years. These estimates are shown in Figure 3. We can classify the spectrum in frequency bands according to the type of motions occurring in the different time ranges. The first region corresponds to frequencies smaller than a period of 100 days for 2017 and 40 days for 2012. In this band, both curves display a nearly white flat band. The following band corresponds to the geostrophic eddy range and it is defined between the period 100 days up to the inertial frequency $$f$$, which is the local Coriolis frequency defined as $$f = 2\Omega \sin \theta$$. In this band, the HKE estimate falls in an approximate power law $$\sigma−b$$ (where $$\sigma$$ is the frequency and $$b$$ is a constant), this band is geostrophically balanced, bellow the surface boundary layer. The internal waves band is located at frequencies between $$f < \sigma < N$$ (where $$N$$ is the Brunt-Vaisala frequency). This band follows as well an approximate power law and is controlled by gravity wave dynamics. Finally, the frequency band $$\sigma > N$$ is dominated by small scale turbulence that results from the breaking of internal waves.
 
 <style>
 .aligncenter {
@@ -68,4 +68,41 @@ It is convenient to compute the PSD of a signal to see the different forcings pr
 
 ###### Figure 3: Horizontal kinetic energy (HKE) estimates recorded with the AquaDopp in 2012 (top) and 2017 (bottom). The labels at the top axis indicate the characteristic frequencies, in particular OO1 and K1 are the Lunar diurnal tidal components and M2, M4 and M6 are the semidiurnal components. N is the Brunt-Vaisala frequency at 1700m deep. The orange and blue lines indicate slopes correspond fit done for the geostrophic eddy band and the inertial wave band respectively. The dotted line with slope −5/3 is for comparison.
 
-For both years, we see that both power spectra have clear peaks that correspond to the different tidal constituents, confirming that there is an amplification of the internal tide in the MORs as observed by Vic et al. (2018). In particular, just before the inertial frequency f there are peaks that match the lunar diurnal tidal frequencies K1 and OO1. Separating the geostrophic eddy band with the internal wave band, we see the inertial peak which is larger for 2012. In the internal wave band (σ > f) we see peaks that correspond to the internal tides. In particular, we see that the largest and broader peak coincides with the principal lunar semidiurnal constituent M2. Also, we identify the M4 and M6 semidiurnal peaks which contribute less to the HKE. At the higher frequencies, the resolution of the current meter doesn’t allow the spectrum to reach the N frequency where the breaking of the internal waves occurs. For both bands, the slope of the estimated power-law is −1.02 for 2012 and −1.12 for 2017. The slopes in the internal wave band are −0.75 for 2012 and −0.74 for 2017, which are similar to the −0 81 slope reported by Ferrari and Wunsch (2009) and Fu et al. (1982) at 1500 m deep, 27°N in the MAR. The HKE from both years are similar in their estimated power laws, despite their slightly different topographical placing, suggesting that there is no variation between years.
+For both years, we see that both power spectra have clear peaks that correspond to the different tidal constituents, confirming that there is an amplification of the internal tide in the MORs as observed by Vic et al. (2018). In particular, just before the inertial frequency f there are peaks that match the lunar diurnal tidal frequencies K1 and OO1. Separating the geostrophic eddy band with the internal wave band, we see the inertial peak which is larger for 2012. In the internal wave band ($$\sigma > f$$) we see peaks that correspond to the internal tides. In particular, we see that the largest and broader peak coincides with the principal lunar semidiurnal constituent M2. Also, we identify the M4 and M6 semidiurnal peaks which contribute less to the HKE. At the higher frequencies, the resolution of the current meter doesn’t allow the spectrum to reach the $$N$$ frequency where the breaking of the internal waves occurs. For both bands, the slope of the estimated power law is −1.02 for 2012 and −1.12 for 2017. The slopes in the internal wave band are −0.75 for 2012 and −0.74 for 2017, which are similar to the −0.81 slope reported by Ferrari and Wunsch (2009) and Fu et al. (1982) at 1500 m deep, 27°N in the MAR. The HKE from both years are similar in their estimated power laws, despite their slightly different topographical placing, suggesting that there is no variation between years.
+
+
+## Temperature Power Spectral Density Estimates
+
+Following the same method used to compute the HKE, we calculated the power spectral estimates from the temperature sensors in the mooring. These sensors were predominant in the line throughout all years, making the temperature PSD estimates plots very numerous to display all in this section.
+
+<style>
+.aligncenter {
+    text-align: center;
+}
+</style>
+<p class="aligncenter">
+    <img src="/../assets/projects/vents/PSD_temp_rbr_2018.png" width = "600" alt="centered image"/>
+</p>
+<p class="aligncenter">
+    <img src="/../assets/projects/vents/zoom_PSD_temp_rbr_2018.png" width = "600" alt="centered image"/>
+</p>
+###### Figure 4: Temperature power spectral density recorded with the RBR in 2018. The top panel show the PSD from the time series recorded at −800 m down to the one at −1660 m. The lower panel is a zoom of of the top panel between $$1$$ cpd to $$10^1$$ cpd. Both plots mark the characteristic frequencies in the top axis.
+
+We selected the 2018 measurements, recorded with an RBR, as a representative year for the temperature, because it had the largest number of sensors per depth installed in the line and it displayed a similar PSD from other years at the same levels. For this year, we estimated the PSD for all depths, which can be seen in Figure 4. At the top figure, we see how the different colors represent the PSD from different temperatures, and we note that the power of the signal decreases as the depth increases. In the geostrophic eddy band ($$\sigma < f$$), we see how the power spectra are larger for the shallower instruments such as −800 m to 1300 m, between $$10^{−1}$$ cpd to $$1$$ cpd, this might be due to the presence of mesoscale eddies, which structure can reach these depths. In the inertial band, we see that the spectrum is dominated by the M2 peak within the order of $$10^{−2}$$  º$$C^2/cpd$$, followed by the M4 and M6 peaks, decreasing in power as frequency increases. The Nmin and Nmax are the Brunt-Vaisala frequencies for the bottom depth (−1600m) and the top depth (−800m) respectively. Between these two frequencies, we don’t see the signature of wave breaking, instead, we see a continuous decaying of the spectrum and a convergence of all the PSDs. Although, in the frequency range $$10^1$$ cpd to $$10^2$$ cpd, we see the broad peak at $$38$$ cpd for depths of 800 m, 900 m and 1200 m, being smoothed as the depth increases. In the bottom panel of Figure 4, we see a zoom at the lower spectrum of the inertial frequency band. Between the semidiurnal peaks, we see that the PSD estimates have a higher value for the shallower measurements than for the deeper ones, this is due to the friction from the seafloor that slows the water movements. Also, there is no inertial peak at $$\sigma ∼ f$$ and the lunar diurnal peaks are also not present.
+
+
+# Acknowledgments
+Thanks to Prof. Guillaume Roullet and Dr. Jonathan Gula for supervising me during this work.
+This post it's just an excerpt of my master thesis. 
+
+# References
+
+- Colaço, A., Blandin, J., Cannat, M., Carval, T., Chavagnac, V., Connelly, D., Fabian, M., Ghiron, S., Goslin, J., Miranda, J., et al. (2011). Momar-d: a technological challenge to monitor the dynamics of the lucky strike vent ecosystem. ICES Journal of Marine Science, 68(2):416–424.
+- Ferrari, R. and Wunsch, C. (2009). Ocean circulation kinetic energy: Reservoirs, sources, and sinks. Annual Review of Fluid Mechanics, 41.
+- Fu, L., LL, F., PP, N., et al. (1982). Observations of mesoscale variability in the western north atlantic: A comparative study.
+- Jean-Baptiste, P., Fourré, E., Dapoigny, A., Charlou, J.-L., and Donval, J.-P. (2008). Deepwater mantle 3he plumes over the northern mid-atlantic ridge (36° n–40° n) and the azores platform. Geochemistry, Geophysics, Geosystems, 9(3).
+- Karson, J. A., Kelley, D. S., Fornari, D. J., Perfit, M. R., and Shank, T. M. (2015). Dis- covering the Deep: A Photographic Atlas of the Seafloor and Ocean Crust. Cambridge University Press.
+- Langmuir, C., Humphris, S., Fomari, D., Van Dover, C., K., V. D., Tivey, M., Colodner, D., Desonie, J.-L. C. D., et al. (1997). Hydrothermal vents near a mantle hot spot: the lucky strike vent field at 370n on the mid-atlantic ridge. Earth and Planetary Science Letters, 48:69–91.
+- Ondréas, H., Cannat, M., Fouquet, Y., Normand, A., Sarradin, P.-M., and Sarrazin, J. (2009). Recent volcanic events and the distribution of hydrothermal venting at the lucky strike hydrothermal field, mid-atlantic ridge. Geochemistry, Geophysics, Geosystems, 10(2).
+- Vic, C., Gula, J., Roullet, G., and Pradillon, F. (2018). Dispersion of deep-sea hy- drothermal vent effluents and larvae by submesoscale and tidal currents. Deep Sea Research Part I: Oceanographic Research Papers, 133:1–18.
+- Welch, P. (1967). The use of fast fourier transform for the estimation of power spec- tra: a method based on time averaging over short, modified periodograms. IEEE Transactions on audio and electroacoustics, 15(2):70–73.
