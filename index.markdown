@@ -12,8 +12,7 @@ layout: page
 
 # Welcome!
 
-In this place I dump all my projects that were too cool to be published in mainstream journals.
-This is my academic portfolio, sort of.
+This is a personal Archive of the academic projects that I ve been working on. 
 
 Click here for [projects](/projects/)
 or here to know [about](/about/) myself.
