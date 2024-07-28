@@ -33,6 +33,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-leaflet
 markdown: kramdown
+imagesurl: "/assets/project/bayesian/"
+thumbsurl: "/assets/project/bayesian_thumbs/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
