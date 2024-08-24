@@ -95,6 +95,10 @@ Atlantic Ocean Using Bayesian Inference. Frontiers in Marine Science (2022)._ <a
 &nbsp;&nbsp;&nbsp;"Attribution of River-Sourced Floating Plastic in the South Atlantic Ocean Using Bayesian Inference."<br />
 &nbsp;&nbsp;&nbsp;September 2022.<br />
 
+**How to engage with the Mission “Restore our Ocean and Waters by 2030” – A Mediterranean Lighthouse.**<br />
+&nbsp;&nbsp;&nbsp;Presenting and networking with stakeholders of Sea-Clearly hackathon project.<br />
+&nbsp;&nbsp;&nbsp;June 2022.<br />
+
 **Annual Reunion of the Mexican Geophysical Union.**<br />
 &nbsp;&nbsp;&nbsp;"Study of the Planetary Boundary Layer over Mexico City during the inversion layers period."<br />
 &nbsp;&nbsp;&nbsp;November 2017.<br />
