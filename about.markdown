@@ -11,6 +11,6 @@ permalink: /about/
 
 <!--<p align="justify"> During my career, I have worked on research projects related to Atmospheric Physics and Physical Oceanography that involved numerical simulations, data processing and observational fieldwork.</p>  />-->
 
-<p align="justify"> I'm interested in the study of large scale flows in the ocean using numerical simulations and direct observations. I believe in the necessity of doing intelligent simplifications of problems and in constructing simple models to understand the underlying physics of certain processes. Also, I'm interested in dynamical systems in the atmosphere and the ocean. Recently I started digging Information Theory.</p>
+<p align="justify"> I'm interested in the study of large scale flows in the ocean using numerical simulations and direct observations. I believe in the necessity of doing intelligent simplifications of problems and in constructing simple models to understand the underlying physics of certain processes.</p>
 
-<p align="justify"> I'm interested in ocean pollution from a socio-political point of view. I also love caves! Especially if they are flooded 🦐🔦.</p>
+<p align="justify"> I'm interested in ocean pollution from a socio-political point of view and the Blue Commons. I also love caves! Especially if they are flooded 🦐🔦.</p>

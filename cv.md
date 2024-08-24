@@ -10,7 +10,7 @@ permalink: /cv/
 -----------
 
 **Ph.D. Candidate Physical Oceanography.** <br />
-&nbsp;&nbsp;&nbsp;Utrecht University (2020 - present).<br />
+&nbsp;&nbsp;&nbsp;Utrecht University (2020 - Dec. 2024).<br />
 
 **M2 Environmental Fluid Mechanics.** <br />
 &nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2019 - 2020).<br />
@@ -28,25 +28,26 @@ permalink: /cv/
 **Institute for Marine and Atmospheric research Utrecht (IMAU).**<br />
 &nbsp;&nbsp;&nbsp;Utrecht. October 2020 - present.<br />
 &nbsp;&nbsp;&nbsp;PhD Researcher.<br />
-&nbsp;&nbsp;&nbsp;Project: _Nanoplastics: investigating the formation, presence, and distribution in aquatic environments_. <a href="https://nanoplastics.org/" style="float: centre;">Link 🔗</a><br />
-&nbsp;&nbsp;&nbsp;Supervisor: _Prof. Erik van Sebille_. <br />
+&nbsp;&nbsp;&nbsp;Project: _Modeling the transport and formation of Marine nanoplastic_. <a href="https://nanoplastics.org/" style="float: centre;">Link 🔗</a><br />
+&nbsp;&nbsp;&nbsp;Supervisor: _Prof. Erik van Sebille & Dr. Florian Meirer._. <br />
 
 **Laboratoire d’Océanographie Physique et Spatiale (LOPS).**<br />
 &nbsp;&nbsp;&nbsp;Brest. February 2020 - September 2020.<br />
 &nbsp;&nbsp;&nbsp;Master's research internship.<br />
-&nbsp;&nbsp;&nbsp;Project: _Abyssal turbulence in the vicinity of Lucky Strike._ <a href="/projects/luckystrike/" style="float: centre;">Lucky Strike 🔗</a><a href="/projects/plume/" style="float: centre;"> LES plume 🔗</a><br />
+&nbsp;&nbsp;&nbsp;Project: _Characterizing oceanic turbulence in hydrothermal vents ecosystems._ <a href="/projects/luckystrike/" style="float: centre;">Lucky Strike 🔗</a><a href="/projects/plume/" style="float: centre;"> LES plume 🔗</a><br />
 &nbsp;&nbsp;&nbsp;Supervisors: _Prof. Guillaume Roullet_ and _Dr. Jonathan Gula_. <br />
 
 **Institut des Géosciences de l’Environnement (IGE).**<br />
 &nbsp;&nbsp;&nbsp;Grenoble. November 2018 - May 2019.<br />
 &nbsp;&nbsp;&nbsp;Master's research internship.<br />
-&nbsp;&nbsp;&nbsp;Project: _Measurement of Turbulence in Katabatic Winds on a Steep Slope_. <br />
+&nbsp;&nbsp;&nbsp;Project: _Measuring katabatic winds over a alpine slopes. A potential contributor to valley inversion layers_. <br />
 &nbsp;&nbsp;&nbsp;Supervisor: _Dr. Jean-Emmanuel Sicart_. <br />
 
 **Center for Atmospheric Sciences, UNAM.**<br />
 &nbsp;&nbsp;&nbsp;Mexico City. July 2017 - August 2018.<br />
 &nbsp;&nbsp;&nbsp;Undergraduate Research Assistant, Ocean-Atmosphere Interaction group.<br />
-&nbsp;&nbsp;&nbsp;Project: _Development of an operational forecast system for extreme events to predict meteorological conditions, waves and storm tides_.<br />
+&nbsp;&nbsp;&nbsp;Project: _Development of an operational forecast system for extreme events using numerical models to predict extreme
+pollution events in Mexico City._.<br />
 &nbsp;&nbsp;&nbsp;Supervisor: _Dr. Jorge Zavala Hidalgo_.<br />
 
 **Center for Atmospheric Sciences, UNAM.**<br />
@@ -55,46 +56,57 @@ permalink: /cv/
 &nbsp;&nbsp;&nbsp;Project: _Numerical simulations of convection in a stratified fluid_. <a href="/projects/convection/" style="float: centre;">Link 🔗</a><br />
 &nbsp;&nbsp;&nbsp;Supervisor: _Dr. Angel Ruiz-Angulo_.<br />
 
-**CICESE.**<br />
-&nbsp;&nbsp;&nbsp;Tampico. November 2017.<br />
-&nbsp;&nbsp;&nbsp;Field Assistant, Glider deployment in the Gulf of Mexico.<br />
-&nbsp;&nbsp;&nbsp;Project: _Oceanographic Monitoring Group with Gliders (GMOG)_.<br />
-&nbsp;&nbsp;&nbsp;Supervisor: _Dr. Angel Ruiz-Angulo_.<br />
-
-
 # Awards
 ------------
+
+**Blue-Cloud Hackathon Winner Team.**<br />
+&nbsp;&nbsp;&nbsp;_EU 25,000 for developing the Sea-Clearly tool for tracking plastic pollution reaching aquaculture farms._<br />
+&nbsp;&nbsp;&nbsp;February 2022. <a href="http://seaclearly.io/" style="float: centre;">seaclearly.io 🔗</a>
 
 **Make Our Planet Great Again Laureate.**<br />
 &nbsp;&nbsp;&nbsp;_Master’s Excellence Grant for Climate Science and Research_.<br />
 &nbsp;&nbsp;&nbsp;2018-2020.<br />
 
+# Publications
+------------
+- C.M. Pierard, F. Meirer, E. van Seville. _Identifying the Origins of Nanoplastics in the Abyssal South Atlantic
+Using Backtracking Lagrangian Simulations with Fragmentation._ Ocean and Coastal Research (Submitted).
 
-**Blue-Cloud Hackathon Winner Team.**<br />
-&nbsp;&nbsp;&nbsp;_EU 25,000 for developing the Sea-Clearly tool for tracking plastic pollution reaching aquaculture farms._<br />
-&nbsp;&nbsp;&nbsp;February 2022. <a href="http://seaclearly.io/" style="float: centre;">seaclearly.io 🔗</a> <a href="https://hackathon.blue-cloud.org/" style="float: centre;">Blue-Cloud 🔗</a><br />
+- C.M. Pierard, D. Bassotto, F. Meirer, E. van Seville. _Attribution of River-Sourced Floating Plastic in the South
+Atlantic Ocean Using Bayesian Inference. Frontiers in Marine Science (2022)._ <a href="https://doi.org/10.3389/fmars.2022.925437 " style="float: centre;">DOI.</a>
 
 
 # Conferences
 ------------
 
-**Annual Reunion of the Mexican Geophysical Union.**<br />
-&nbsp;&nbsp;&nbsp;"Study of the Planetary Boundary Layer over Mexico City during the inversion layers period."<br />
-&nbsp;&nbsp;&nbsp;November 2017.<br />
+**Symposium Nanoplastics: Origin, Structure, and Fate.**<br />
+&nbsp;&nbsp;&nbsp;Co-organizer and Poster Presenter.<br />
+&nbsp;&nbsp;&nbsp;November 2022.<br />
 
-**Nederlands Aardwetenschappelijk Congres (NAC) - NWO.**<br />
-&nbsp;&nbsp;&nbsp;"Attribution of River-Sourced Floating Plastic in the South Atlantic Ocean Using Bayesian Inference."<br />
-&nbsp;&nbsp;&nbsp;September 2022.<br />
+**European Geophysical Union General Assembly.**<br />
+&nbsp;&nbsp;&nbsp;Presentation: Identifying the Origins of PET Nanoplastics in the Abyssal South Atlantic.<br />
+&nbsp;&nbsp;&nbsp;April 2023.<br />
 
 **MICRO 2022 - Plastic Pollution from Macro to Nano.**<br />
 &nbsp;&nbsp;&nbsp;"Backtracking nanoplastics found in the abyssal South Atlantic using Lagrangian simulations with fragmentation."<br />
 &nbsp;&nbsp;&nbsp;November 2022.<br />
 
+**Nederlands Aardwetenschappelijk Congres (NAC) - NWO.**<br />
+&nbsp;&nbsp;&nbsp;"Attribution of River-Sourced Floating Plastic in the South Atlantic Ocean Using Bayesian Inference."<br />
+&nbsp;&nbsp;&nbsp;September 2022.<br />
+
+**Annual Reunion of the Mexican Geophysical Union.**<br />
+&nbsp;&nbsp;&nbsp;"Study of the Planetary Boundary Layer over Mexico City during the inversion layers period."<br />
+&nbsp;&nbsp;&nbsp;November 2017.<br />
 
 # Workshops
 ------------
 
-__*Bad Honnef Physics School on Physics of the Ocean.__<br />
+__Fluid Dynamics of Sustainability and the Environment.__<br />
+&nbsp;&nbsp;&nbsp;Summer School at DAMTP, University of Cambridge<br />
+&nbsp;&nbsp;&nbsp;_September 2023_.<br />
+
+__Bad Honnef Physics School on Physics of the Ocean.__<br />
 &nbsp;&nbsp;&nbsp;Deutsche Physikalische Gesellschaft – *Cancelled due to COVID-19.<br />
 &nbsp;&nbsp;&nbsp;_July 2020_.<br />
 
@@ -111,12 +123,44 @@ __*Bad Honnef Physics School on Physics of the Ocean.__<br />
 &nbsp;&nbsp;&nbsp;_June 2016_.<br />
 
 
-# Teaching
+# Teaching & Supervision
 ------------
+
+__Daily Supervisor for Bachelor Thesis of Clara Koster.__<br />
+&nbsp;&nbsp;&nbsp;Faculty of Physics, Utrecht University..<br />
+&nbsp;&nbsp;&nbsp;_February - August 2023._<br />
 
 __Teaching Assistant of Numerical Methods for Physicists and Astronomers (NS-256B).__<br />
 &nbsp;&nbsp;&nbsp;Faculty of Physics, Utrecht University.<br />
 &nbsp;&nbsp;&nbsp;_2020-21, 2021-22, 2022-23._<br />
+
+__Mentor at the OceanHackWeek en Espanol 2023.__<br />
+&nbsp;&nbsp;&nbsp;Introduction to Lagrangian Modeling with Ocean Parcels.<br />
+&nbsp;&nbsp;&nbsp;_February 2023._<br />
+
+# Field Experience
+------------
+
+**Nanoplastics Expedition II. North Atlantic Subtropical Gyre**<br />
+&nbsp;&nbsp;&nbsp;Physical Oceanographer onboard of RV Pelagia.<br />
+&nbsp;&nbsp;&nbsp;_22 November to 21 December 2023_.<br />
+
+**Glider deployment in the Gulf of Mexico**<br />
+&nbsp;&nbsp;&nbsp;Oceanographic Monitoring Group with Gliders (CICESE).<br />
+&nbsp;&nbsp;&nbsp;_Tampico. November 2017_.<br />
+
+# Skills
+------------
+
+**Languages**<br />
+&nbsp;&nbsp;&nbsp;Spanish (native).<br />
+&nbsp;&nbsp;&nbsp;French (fluent). <br />
+&nbsp;&nbsp;&nbsp;English (fluent). <br />
+
+**Programming Languages**<br />
+&nbsp;&nbsp;&nbsp;_Python and Julia_.
+
+
 # Certifications
 ------------
 
@@ -137,15 +181,3 @@ __Teaching Assistant of Numerical Methods for Physicists and Astronomers (NS-256
 - _Sidemount Diver._<br />
 &nbsp;&nbsp;&nbsp;Technical Diving International. *March 2022*.<br />
 
-
-# Skills
-------------
-
-**Languages**<br />
-&nbsp;&nbsp;&nbsp;Spanish (native).<br />
-&nbsp;&nbsp;&nbsp;French (fluent). <br />
-&nbsp;&nbsp;&nbsp;English (fluent). <br />
-&nbsp;&nbsp;&nbsp;Dutch (beginner). <br />
-
-**Programming Languages**<br />
-&nbsp;&nbsp;&nbsp;_Python and Julia_.
