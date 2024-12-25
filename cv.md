@@ -26,7 +26,7 @@ permalink: /cv/
 -----------
 
 **Institute for Marine and Atmospheric research Utrecht (IMAU).**<br />
-&nbsp;&nbsp;&nbsp;Utrecht. October 2020 - present.<br />
+&nbsp;&nbsp;&nbsp;Utrecht. October 2020 - December 2024.<br />
 &nbsp;&nbsp;&nbsp;PhD Researcher.<br />
 &nbsp;&nbsp;&nbsp;Project: _Modeling the transport and formation of Marine nanoplastic_. <a href="https://nanoplastics.org/" style="float: centre;">Link 🔗</a><br />
 &nbsp;&nbsp;&nbsp;Supervisor: _Prof. Erik van Sebille & Dr. Florian Meirer._. <br />
@@ -66,15 +66,6 @@ pollution events in Mexico City._.<br />
 **Make Our Planet Great Again Laureate.**<br />
 &nbsp;&nbsp;&nbsp;_Master’s Excellence Grant for Climate Science and Research_.<br />
 &nbsp;&nbsp;&nbsp;2018-2020.<br />
-
-# Publications
-------------
-- C.M. Pierard, F. Meirer, E. van Seville. _Identifying the Origins of Nanoplastics in the Abyssal South Atlantic
-Using Backtracking Lagrangian Simulations with Fragmentation._ Ocean and Coastal Research (Submitted).
-
-- C.M. Pierard, D. Bassotto, F. Meirer, E. van Seville. _Attribution of River-Sourced Floating Plastic in the South
-Atlantic Ocean Using Bayesian Inference. Frontiers in Marine Science (2022)._ <a href="https://doi.org/10.3389/fmars.2022.925437 " style="float: centre;">DOI.</a>
-
 
 # Conferences
 ------------
@@ -136,9 +127,9 @@ __Daily Supervisor for Bachelor Thesis of Clara Koster.__<br />
 
 __Teaching Assistant of Numerical Methods for Physicists and Astronomers (NS-256B).__<br />
 &nbsp;&nbsp;&nbsp;Faculty of Physics, Utrecht University.<br />
-&nbsp;&nbsp;&nbsp;_2020-21, 2021-22, 2022-23._<br />
+&nbsp;&nbsp;&nbsp;_Four times: 2020-2021, 2021-2022, 2022-2023, and 2023-2024._<br />
 
-__Mentor at the OceanHackWeek en Espanol 2023.__<br />
+__Mentor at the OceanHackWeek en Español 2023.__<br />
 &nbsp;&nbsp;&nbsp;Introduction to Lagrangian Modeling with Ocean Parcels.<br />
 &nbsp;&nbsp;&nbsp;_February 2023._<br />
 
@@ -146,7 +137,7 @@ __Mentor at the OceanHackWeek en Espanol 2023.__<br />
 ------------
 
 **Nanoplastics Expedition II. North Atlantic Subtropical Gyre**<br />
-&nbsp;&nbsp;&nbsp;Physical Oceanographer onboard of RV Pelagia.<br />
+&nbsp;&nbsp;&nbsp;Physical oceanographer onboard of RV Pelagia.<br />
 &nbsp;&nbsp;&nbsp;_22 November to 21 December 2023_.<br />
 
 **Glider deployment in the Gulf of Mexico**<br />

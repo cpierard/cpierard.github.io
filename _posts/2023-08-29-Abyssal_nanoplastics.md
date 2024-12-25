@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Backtracking nanoplastics sample in the abyssal South Atlantic"
+title:  "Backtracking nanoplastics sampled in the abyssal South Atlantic"
 permalink: /projects/backtrack-nps/
 ---
 ## Supporting Animations
