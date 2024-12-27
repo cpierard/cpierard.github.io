@@ -43,6 +43,9 @@ thumbsurl: "/assets/project/bayesian_thumbs/"
 #
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
+
+include:
+  - _data
 #
 # exclude:
 #   - .sass-cache/

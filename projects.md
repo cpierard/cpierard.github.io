@@ -7,7 +7,8 @@ permalink: /projects/
 #### PhD Projects
 
 - [Backtracking nanoplastics sampled in the abyssal South Atlantic](/projects/backtrack-nps/)
-- More projects pending to upload
+- [Bayesian inference of river plastics in the South Atlantic](/projects/bayesian-plastic/)
+- Some projects pending to upload
 
 #### Master Projects
 - [LES simulation of a buoyant plume](/projects/plume/)

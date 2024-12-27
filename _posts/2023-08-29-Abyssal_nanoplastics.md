@@ -3,6 +3,9 @@ layout: post
 title:  "Backtracking nanoplastics sampled in the abyssal South Atlantic"
 permalink: /projects/backtrack-nps/
 ---
+
+This work was published in Ocean and Coastal Research with the title ["Identifying the origins of nanoplastics in the abyssal South Atlantic using backtracking Lagrangian simulations with fragmentation (2024)"](https://doi.org/10.1590/2675-2824072.24008) by C.M. Pierard, F. Meirer and E. van Sebille.
+
 ## Supporting Animations
 
 <p align="center"><iframe width="90%" height="515" src="/../assets/projects/backtrack/animation_ocr_pierard.m4v" frameborder="0" allowfullscreen></iframe></p>
