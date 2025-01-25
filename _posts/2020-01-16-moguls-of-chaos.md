@@ -17,8 +17,9 @@ This project aims to perform the small numerical experiment that Ed did and expl
 I started this small project two years ago after reading the above-mentioned book, but I couldn't finish it, and given that I am required to do a small project for my scientific computing class, I will use it as an opportunity to finish once and for all this mini-project. Also, this problem is an excuse to refresh my very rusty Julia skills and to keep my Python skills sharp. This post doesn't show the code used to solve the equations or plot the examples, but it can be found in the following [repository](https://github.com/cpierard/moguls_of_chaos).
 
 <p class="aligncenter">
-    <img src="https://snowgoing.com/wp-content/uploads/2019/09/mogul_race.png" width = "650" alt="centered image"/>
+    <img src="/../assets/projects/moguls_of_chaos/Ski_school_on_moguls_Edelweiss_slope_Les_Arcs.jpg" width = "650" alt="centered image"/>
 </p>
+###### Ski school on moguls, Edelweiss slope, Les Arcs. Photo by DimiTalen - Own work, CC0, https://commons.wikimedia.org/w/index.php?curid=125707415.
 
 The ski slope model consists of a board that goes down a regularly-bumpy slope or moguls without any control of the direction whatsoever. The dynamical system of this board is described by the system of ODEs shown bellow.
 

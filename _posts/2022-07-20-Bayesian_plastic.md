@@ -16,12 +16,15 @@ We developed a Bayesian inference framework to determine the probability that a 
     <img src="/../assets/projects/bayesian/clusters.jpg" alt="First image description" style="width: 68%;">
     <img src="/../assets/projects/bayesian/priors.png" alt="Second image description" style="width: 28%;">
 </div>
+###### Figure 1: On the left the we show the main clusters of rivers emitting plastics in the South Atlantic. On the right, the percentage of plastic emitted from each cluster.
+
 
 ### Lagrangian Simulations of plastic from river deltas
 
 <p align="center"><iframe width="90%" height="515" src="/../assets/projects/bayesian/realtime_sa-s06_3.mp4" frameborder="0" allowfullscreen></iframe></p>
+###### Video 1: one-year continous release of particles from the main river clusters in the South Atlantic. We released 100,000 particles per cluster.
 
-###  Posterior probability that a piece of floating plastic found at sea came from a particular river
+###  Posterior probability
 Click on the image to zoom in.
 
 <style>
@@ -142,3 +145,4 @@ window.onclick = function(event) {
     }
 }
 </script>
+###### Figure 2: Posterior probability maps, averaged over 3.4 years, showing $$p(R_i|S_{loc})$$, the probability of finding a particle from a specific cluster at any point in the South Atlantic. Each map displays the probability for a specific cluster in all the bins of the domain. The red dots indicate the locations of the clusters from which the particles entered the ocean. At each location, the sum of posterior probability of the twelve clusters is 1.
