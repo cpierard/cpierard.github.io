@@ -25,6 +25,12 @@ permalink: /cv/
 # Experience
 -----------
 
+**The Ocean Cleanup**<br />
+&nbsp;&nbsp;&nbsp;Rotterdam. March 2025 - present.<br />
+&nbsp;&nbsp;&nbsp;Junior Ocean Numerical Modeler.<br />
+&nbsp;&nbsp;&nbsp;Project: _Mapping Impact for River Plastic Interceptors_. <a href="https://theoceancleanup.com/rivers/" style="float: centre;">Link 🔗</a><br />
+
+
 **Institute for Marine and Atmospheric research Utrecht (IMAU).**<br />
 &nbsp;&nbsp;&nbsp;Utrecht. October 2020 - December 2024.<br />
 &nbsp;&nbsp;&nbsp;PhD Researcher.<br />
