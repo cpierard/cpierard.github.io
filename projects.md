@@ -20,5 +20,5 @@ permalink: /projects/
 
 
 <div style="text-align: center;">
-    <img src="/assets/graphics-torch.gif" width="20" height="30" />
+    <img src="/assets/graphics-torch.gif" width="50" />
 </div>

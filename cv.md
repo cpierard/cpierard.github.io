@@ -5,22 +5,7 @@ permalink: /cv/
 ---
 <!-- <a href="/assets/CV_Pierard.pdf" style="float: right;">Download</a> -->
 
-
-# Education
------------
-
-**Ph.D. Candidate Physical Oceanography.** <br />
-&nbsp;&nbsp;&nbsp;Utrecht University (2020 - Dec. 2024).<br />
-
-**M2 Environmental Fluid Mechanics.** <br />
-&nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2019 - 2020).<br />
-
-**M1 Applied Mechanics.** <br />
-&nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2018 - 2019).<br />
-
-**B.Sc. Physics.** <br />
-&nbsp;&nbsp;&nbsp;Universidad Nacional Autónoma de México (2011 - 2017). <br />
-
+<img src="{{ '/assets/island.gif' | relative_url }}" width="700" style="display: block;">
 
 # Experience
 -----------
@@ -28,7 +13,7 @@ permalink: /cv/
 **The Ocean Cleanup**<br />
 &nbsp;&nbsp;&nbsp;Rotterdam. April 2025 - March 2026.<br />
 &nbsp;&nbsp;&nbsp;Ocean Numerical Modeler Jr.<br />
-&nbsp;&nbsp;&nbsp;Project: _Mapping Impact for River Plastic Interceptors_. <a href="https://theoceancleanup.com/rivers/" style="float: centre;">Link 🔗</a><br />
+&nbsp;&nbsp;&nbsp;Project: _Impact evaluation for river plastic interceptors with coastal numerical simulations_. <a href="https://theoceancleanup.com/rivers/" style="float: centre;">Link 🔗</a><br />
 
 
 **Institute for Marine and Atmospheric research Utrecht (IMAU).**<br />
@@ -61,6 +46,21 @@ pollution events in Mexico City._.<br />
 &nbsp;&nbsp;&nbsp;Undergraduate Research Assistant, Laboratory of Geophysical Fluids.<br />
 &nbsp;&nbsp;&nbsp;Project: _Numerical simulations of convection in a stratified fluid_. <a href="/projects/convection/" style="float: centre;">Link 🔗</a><br />
 &nbsp;&nbsp;&nbsp;Supervisor: _Dr. Angel Ruiz-Angulo_.<br />
+
+# Education
+-----------
+
+**Ph.D. Candidate Physical Oceanography.** <br />
+&nbsp;&nbsp;&nbsp;Utrecht University (2020 - Dec. 2024).<br />
+
+**M2 Environmental Fluid Mechanics.** <br />
+&nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2019 - 2020).<br />
+
+**M1 Applied Mechanics.** <br />
+&nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2018 - 2019).<br />
+
+**B.Sc. Physics.** <br />
+&nbsp;&nbsp;&nbsp;Universidad Nacional Autónoma de México (2011 - 2017). <br />
 
 # Awards
 ------------

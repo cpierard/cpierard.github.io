@@ -4,6 +4,13 @@ title: Publications
 permalink: /publications/
 ---
 
+<!-- Top Frame (Rotated 180°) -->
+<div style="display: flex; justify-content: center; overflow: hidden; margin-bottom: 20px;">
+  {% for i in (1..5) %}
+    <img src="{{ '/assets/new.gif' | relative_url }}" width="80" style="margin: 0 0px;" />
+  {% endfor %}
+</div>
+
 ### Peer-review
 
 - **C.M. Pierard**, S. Rühs, L. Gómez-Navarro, M.C. Denes, F. Meirer, T. Pendeuff, E. van Seville. <ins>Quantifying Variability in Lagrangian particle dispersal in ocean ensemble simulations: an information theory approach.</ins> Nonlinear Processes in Geophysics (2025). [DOI: 10.5194/npg-32-411-2025 (Open access).](https://doi.org/10.5194/npg-32-411-2025)

@@ -1,0 +1,60 @@
+<link id="fa-stylesheet" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.0/css/all.min.css">
+
+<style>
+  /* Desktop Layout */
+  .responsive-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  /* Mobile Layout (Stacks when screen is narrower than 600px) */
+  @media (max-width: 600px) {
+    .responsive-footer {
+      flex-direction: column;
+      text-align: center;
+    }
+    .responsive-footer .footer-col {
+      margin: 10px 0 !important; /* Adds space between stacked items */
+      text-align: center !important;
+      width: 100%;
+    }
+    .responsive-footer img {
+      margin: 0 auto; /* Centers the GIFs on mobile */
+    }
+  }
+</style>
+
+<footer class="site-footer h-card">
+  <data class="u-url" value="{{ '/' | relative_url }}"></data>
+
+  <div class="wrapper">
+    <!-- Changed the inline style to a class for responsiveness -->
+    <div class="footer-col-wrapper responsive-footer">
+      
+      <!-- Column 1: Image 1 -->
+      <div class="footer-col" style="flex: 0 0 auto; margin: 0; padding: 0;">
+        <img src="{{ '/assets/courage.gif' | relative_url }}" width="90" height="90" style="display: block;">
+      </div>
+
+       <!-- Column 2: Image 2 -->
+      <div class="footer-col" style="flex: 0 0 auto; margin: 0; margin-right: 60px; padding: 0;">
+        <img src="{{ '/assets/huracan1.gif' | relative_url }}" width="70" height="70" style="display: block;">
+      </div>
+
+      <!-- Column 3: Social Links -->
+      <div class="footer-col" style="flex: 1; text-align: left;">
+        <div class="social-links">
+          {%- include social.html -%}
+        </div>
+      </div>
+
+      <!-- Column 4: Description -->
+      <div class="footer-col" style="flex: 1; text-align: justify;">
+        <p style="margin-bottom: 0;">{{ site.description | escape }}</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
