@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CV 📜
+title: CV
 permalink: /cv/
 ---
 <!-- <a href="/assets/CV_Pierard.pdf" style="float: right;">Download</a> -->
@@ -26,8 +26,8 @@ permalink: /cv/
 -----------
 
 **The Ocean Cleanup**<br />
-&nbsp;&nbsp;&nbsp;Rotterdam. March 2025 - present.<br />
-&nbsp;&nbsp;&nbsp;Junior Ocean Numerical Modeler.<br />
+&nbsp;&nbsp;&nbsp;Rotterdam. April 2025 - March 2026.<br />
+&nbsp;&nbsp;&nbsp;Ocean Numerical Modeler Jr.<br />
 &nbsp;&nbsp;&nbsp;Project: _Mapping Impact for River Plastic Interceptors_. <a href="https://theoceancleanup.com/rivers/" style="float: centre;">Link 🔗</a><br />
 
 
@@ -70,7 +70,7 @@ pollution events in Mexico City._.<br />
 &nbsp;&nbsp;&nbsp;February 2022. <a href="http://seaclearly.io/" style="float: centre;">seaclearly.io 🔗</a>
 
 **Make Our Planet Great Again Laureate.**<br />
-&nbsp;&nbsp;&nbsp;_Master’s Excellence Grant for Climate Science and Research_.<br />
+&nbsp;&nbsp;&nbsp;_Master’s Excellence Grant for Climate Science and Research awarded by President Emmanuel Macron_.<br />
 &nbsp;&nbsp;&nbsp;2018-2020.<br />
 
 # Conferences
@@ -127,7 +127,7 @@ __Bad Honnef Physics School on Physics of the Ocean.__<br />
 # Teaching & Supervision
 ------------
 
-__Daily Supervisor for Bachelor Thesis of Clara Koster.__<br />
+__Daily Supervisor for Bachelor Thesis of Bachelor student.__<br />
 &nbsp;&nbsp;&nbsp;Faculty of Physics, Utrecht University..<br />
 &nbsp;&nbsp;&nbsp;_February - August 2023._<br />
 

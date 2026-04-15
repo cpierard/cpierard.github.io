@@ -1,14 +1,13 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: page
 ---
 
-<img src="/assets/conv_23.gif" width="320" style="float: right; margin-left: 25px; margin-right: 25px; margin-bottom: 25px;"/>
-
-<br />
-<br />
+<!-- Top Frame (Rotated 180°) -->
+<div style="display: flex; justify-content: center; overflow: hidden; margin-bottom: 20px; transform: rotate(180deg);">
+  {% for i in (1..10) %}
+    <img src="{{ '/assets/conv_23.gif' | relative_url }}" width="80" style="margin: 0 0px;" />
+  {% endfor %}
+</div>
 
 # Welcome!
 
@@ -16,4 +15,9 @@ This is a personal archive of the projects that I worked on. Click here for [pro
 
 Feel free to reach out.
 
-[//]: <> <img src="/assets/conv_23.gif" width="300"/>
+<!-- Bottom Frame -->
+<div style="display: flex; justify-content: center; overflow: hidden; margin-top: 20px;">
+  {% for i in (1..10) %}
+    <img src="{{ '/assets/a1.gif' | relative_url }}" width="80" style="margin: 0 0px;" />
+  {% endfor %}
+</div>
