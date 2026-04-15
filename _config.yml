@@ -27,11 +27,13 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  cpierard
 linkedin_username: claudio-pierard
 # Build settings
-theme: minima
+theme: jekyll-theme-basically-basic
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-leaflet
+  - jekyll-seo-tag
+# Note: Removed jekyll-remote-theme and remote_theme line
+
 markdown: kramdown
 imagesurl: "/assets/project/bayesian/"
 thumbsurl: "/assets/project/bayesian_thumbs/"
