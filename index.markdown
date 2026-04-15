@@ -12,9 +12,8 @@ layout: page
 
 # Welcome!
 
+This is a personal archive of the projects that I worked on. Click here for [projects](/projects/) or here to know [about](/about/) myself.
 
-This is my website where I post about [projects](/projects/) I've been involved during my studies.
-
-Feel free to contact me via email or social media.
+Feel free to reach out.
 
 [//]: <> <img src="/assets/conv_23.gif" width="300"/>

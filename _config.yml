@@ -18,21 +18,23 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Claudio Pierard
-email: c.m.pierard {aT ] uu ( do-t} nl
+title: Claudio M. Pierard
+# email: c.m.pierard {aT ] uu ( do-t} nl
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm a PhD student in Physical Oceanography at Utrecht University, studying the transport of nanoplastics in the ocean.
+  I'm a physicist with a PhD in physical oceanography interested in the development of new statistical methods for the analysis of geophysical data.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: cpierard
 github_username:  cpierard
-
+linkedin_username: claudio-pierard
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-leaflet
 markdown: kramdown
+imagesurl: "/assets/project/bayesian/"
+thumbsurl: "/assets/project/bayesian_thumbs/"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -41,6 +43,9 @@ markdown: kramdown
 #
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
+
+include:
+  - _data
 #
 # exclude:
 #   - .sass-cache/
