@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 # Use the GitHub Pages gem to manage compatibility
 gem "github-pages", "~> 232", group: :jekyll_plugins
-gem "jekyll-theme-basically-basic" # <--- Put it here
+gem "jekyll-remote-theme"
 
 # Add any extra plugins you want here
 group :jekyll_plugins do
