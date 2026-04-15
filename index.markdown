@@ -12,10 +12,7 @@ layout: page
 
 # Welcome!
 
-This is a personal Archive of the academic projects that I ve been working on. 
-
-Click here for [projects](/projects/)
-or here to know [about](/about/) myself.
+This is a personal archive of the projects that I worked on. Click here for [projects](/projects/) or here to know [about](/about/) myself.
 
 Feel free to reach out.
 
