@@ -71,7 +71,7 @@ pollution events in Mexico City._.<br />
 
 **Make Our Planet Great Again Laureate.**<br />
 &nbsp;&nbsp;&nbsp;_Master’s Excellence Grant for Climate Science and Research awarded by President Emmanuel Macron_.<br />
-&nbsp;&nbsp;&nbsp;2018-2020.<br />
+&nbsp;&nbsp;&nbsp;2018-2020. <a href="https://www.campusfrance.org/system/files/medias/documents/2021-08/Master%20MOPGA%20Laureates%20Final%20%28m%C3%A0j.%2027.08.21%29.pdf" style="float:centre;">List of laureats</a><br />
 
 # Conferences
 ------------
@@ -102,6 +102,10 @@ pollution events in Mexico City._.<br />
 
 # Workshops
 ------------
+
+__6ta Escuela Modelación Aplicada del Océano usando CROCO Curso Básico.__<br />
+&nbsp;&nbsp;&nbsp;Summer School, Universidad Nacional de Colombia Campus Medellín<br />
+&nbsp;&nbsp;&nbsp;_January 2026_.<br />
 
 __Fluid Dynamics of Sustainability and the Environment.__<br />
 &nbsp;&nbsp;&nbsp;Summer School at DAMTP, University of Cambridge<br />
@@ -164,7 +168,9 @@ __Mentor at the OceanHackWeek en Español 2023.__<br />
 
 # Certifications
 ------------
-
+- _Introduction to Neural Networks with PyTorch_.<br />
+&nbsp;&nbsp;&nbsp;IBM. [Coursera](https://www.credly.com/badges/62740b80-46e7-4497-b3dd-b1e29a7efb3e/public_url) (
+March 2025).<br />
 - _Nonlinear Dynamics: Mathematical and Computational Approaches_.<br />
 &nbsp;&nbsp;&nbsp;Santa Fe Institute. [Complexity Explorer](https://www.complexityexplorer.org/courses/60-nonlinear-dynamics-mathematical-and-computational-approaches-fall-2016/certificates/3888316416.pdf) (December 2016).<br />
 - _12.340x: Global Warming Science_.<br />

@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Claudio M. Pierard
+title: Dr. Claudio M. Pierard
 # email: c.m.pierard {aT ] uu ( do-t} nl
 description: >- # this means to ignore newlines until "baseurl:"
   I'm a numerical physicist with a PhD in physical oceanography interested in the development of new statistical methods for the analysis of geophysical data.
