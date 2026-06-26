@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="/assets/sheep.jpg" width="300" style="float: right; margin-left: 25px; margin-right: 25px; margin-bottom: 25px;"/>
+<img src="/assets/pelagia.jpg" width="300" style="float: right; margin-left: 25px; margin-right: 25px; margin-bottom: 25px;"/>
 
 <!-- <p align="justify"> I'm a physicist with a PhD in Physical Oceanography from Utrecht University. </p>
 
