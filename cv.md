@@ -5,7 +5,7 @@ permalink: /cv/
 ---
 <!-- <a href="/assets/CV_Pierard.pdf" style="float: right;">Download</a> -->
 
-<img src="{{ '/assets/island.gif' | relative_url }}" width="700" style="display: block;">
+<img src="{{ '/assets/island.gif' | relative_url }}" width="1000" style="display: block;">
 
 # Experience
 -----------
@@ -53,10 +53,10 @@ pollution events in Mexico City._.<br />
 **Ph.D. Candidate Physical Oceanography.** <br />
 &nbsp;&nbsp;&nbsp;Utrecht University (2020 - Dec. 2024).<br />
 
-**M2 Environmental Fluid Mechanics.** <br />
+**M.Sc. Environmental Fluid Mechanics.** <br />
 &nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2019 - 2020).<br />
 
-**M1 Applied Mechanics.** <br />
+**M.Sc. (1 year) Applied Mechanics.** <br />
 &nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2018 - 2019).<br />
 
 **B.Sc. Physics.** <br />
