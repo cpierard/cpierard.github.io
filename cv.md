@@ -19,7 +19,7 @@ permalink: /cv/
 **Institute for Marine and Atmospheric research Utrecht (IMAU).**<br />
 &nbsp;&nbsp;&nbsp;Utrecht. October 2020 - December 2024.<br />
 &nbsp;&nbsp;&nbsp;PhD Researcher.<br />
-&nbsp;&nbsp;&nbsp;Project: _Modeling the transport and formation of Marine nanoplastic_. <a href="https://nanoplastics.org/" style="float: centre;">Link 🔗</a><br />
+&nbsp;&nbsp;&nbsp;Project: _Modeling the transport and formation of Marine nanoplastic_.<br />
 &nbsp;&nbsp;&nbsp;Supervisor: _Prof. Erik van Sebille & Dr. Florian Meirer._. <br />
 
 **Laboratoire d’Océanographie Physique et Spatiale (LOPS).**<br />
@@ -67,7 +67,7 @@ pollution events in Mexico City._.<br />
 
 **Blue-Cloud Hackathon Winner Team.**<br />
 &nbsp;&nbsp;&nbsp;_EU 25,000 for developing the Sea-Clearly tool for tracking plastic pollution reaching aquaculture farms._<br />
-&nbsp;&nbsp;&nbsp;February 2022. <a href="http://seaclearly.io/" style="float: centre;">seaclearly.io 🔗</a>
+&nbsp;&nbsp;&nbsp;February 2022.
 
 **Make Our Planet Great Again Laureate.**<br />
 &nbsp;&nbsp;&nbsp;_Master’s Excellence Grant for Climate Science and Research awarded by President Emmanuel Macron_.<br />

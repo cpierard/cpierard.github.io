@@ -11,7 +11,7 @@ layout: page
 
 # Welcome!
 
-This is a personal archive of the projects that I worked on. Click here for [projects](/projects/) or here to know [about](/about/) myself.
+This is a portafolio and an archive of the projects that I worked on.
 
 Feel free to reach out.
 

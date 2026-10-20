@@ -1,15 +1,8 @@
 ---
 layout: page
-title: Publications
+title: Publications & Posts
 permalink: /publications/
 ---
-
-<!-- Top Frame (Rotated 180°) -->
-<div style="display: flex; justify-content: center; overflow: hidden; margin-bottom: 20px;">
-  {% for i in (1..5) %}
-    <img src="{{ '/assets/new.gif' | relative_url }}" width="80" style="margin: 0 0px;" />
-  {% endfor %}
-</div>
 
 ### Peer-review
 
@@ -33,3 +26,12 @@ permalink: /publications/
 
 
 - **Tesis de licenciatura (undergraduate dissertation)**: Título: <ins>Coeficiente de ventilación en el valle de México: resultados numéricos y observaciones.</ins> [Link TESIUNAM.](http://132.248.9.195/ptd2018/junio/0775192/Index.html)
+
+### Posts
+
+- [Backtracking nanoplastics sampled in the abyssal South Atlantic](/projects/backtrack-nps/)
+- [Bayesian inference of river plastics in the South Atlantic](/projects/bayesian-plastic/)
+- [LES simulation of a buoyant plume](/projects/plume/)
+- [Abyssal turbulence in the vicinity of Lucky Strike](/projects/luckystrike/)
+- [Moguls of chaos](/projects/moguls-of-chaos/)
+- [Two-dimensional simulation of convection in a stratified fluid](/projects/convection/)
