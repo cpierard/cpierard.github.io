@@ -4,39 +4,36 @@ title: Portafolio
 permalink: /portafolio/
 ---
 <style>
-.mm { max-width: 1000px; margin: 0 auto; }
-.mm-intro { max-width: 60ch; margin: 0 0 1rem; }
-.mm svg { width: 100%; height: auto; display: block; overflow: visible; }
-.mm .edge { fill: none; stroke-linecap: round; }
-.mm .skill { cursor: pointer; }
-.mm .skill .shape { stroke: transparent; stroke-width: 3; stroke-linejoin: round; transition: stroke .15s; }
-.mm .skill[aria-pressed="true"] .shape { stroke: currentColor; }
-.mm .skill text { fill: #fff; font-size: 15px; font-weight: 600; pointer-events: none; }
-.mm .skill:focus { outline: none; }
-.mm .skill:focus-visible .shape { stroke: currentColor; stroke-dasharray: 4 3; }
-.mm .hub text { fill: #787878; font-size: 17px; font-weight: 600; }
-.mm .leaf circle { fill: var(--c); stroke: var(--c); stroke-width: 2; }
-.mm .leaf.wip circle { fill: transparent; stroke-dasharray: 3 2; }
-.mm .leaf text { fill: currentColor; font-size: 17px; }
-.mm .leaf a:hover text, .mm .leaf a:focus text { text-decoration: underline; }
-.mm .leaf.pop { animation: mm-in .25s ease-out both; }
-@keyframes mm-in { from { opacity: 0; } to { opacity: 1; } }
-.mm-panel { border-left: 5px solid var(--c, #369acc); padding: .25rem 0 .25rem 1rem; margin: 1.25rem 0 2rem; }
-.mm-panel h2 { margin: 0 0 .5rem; font-size: 1.25rem; }
-.mm-panel ul { margin: 0; padding: 0; list-style: none; }
-.mm-panel li { margin: .9rem 0; display: flex; gap: 1rem; align-items: flex-start; }
-.mm-panel li img { width: 140px; height: 94px; object-fit: cover; border-radius: 10px; flex: none; }
-@media (max-width: 600px) { .mm-panel li { flex-direction: column; gap: .5rem; } .mm-panel li img { width: 100%; height: auto; max-height: 200px; } }
-.mm-tag { font-size: .85em; opacity: .75; }
-.mm-gif { text-align: center; margin-top: 2rem; }
-@media (max-width: 600px) { .mm .skill text { font-size: 17px; } .mm .leaf text { display: none; } }
-@media (prefers-reduced-motion: reduce) { .mm .leaf.pop { animation: none; } .mm .skill .shape { transition: none; } }
+.pf { --rule: rgba(128, 128, 128, .35); max-width: 900px; margin: 0 auto; }
+.pf-filter { display: flex; flex-wrap: wrap; gap: 0 1.5rem; margin: 0 0 2.5rem; border-bottom: 1px solid var(--rule); }
+.pf-filter button { font: inherit; color: inherit; background: none; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; padding: .5rem 0; cursor: pointer; opacity: .6; transition: opacity .15s, border-color .15s; }
+.pf-filter button:hover { opacity: 1; }
+.pf-filter button[aria-pressed="true"] { opacity: 1; border-bottom-color: currentColor; }
+.pf-sec { padding: 0 0 2.5rem; }
+.pf-sec + .pf-sec { border-top: 1px solid var(--rule); padding-top: 2.5rem; }
+.pf-head { padding-bottom: .75rem; }
+.pf-head h2 { margin: 0; font-size: 1.5rem; line-height: 1.2; letter-spacing: -.01em; }
+.pf-rows { list-style: none; margin: 0; padding: 0; }
+.pf-row { display: grid; grid-template-columns: 160px 1fr; gap: 0 1.25rem; padding: .9rem 0; }
+.pf-fig img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 3px; }
+.pf-title { font-size: 1.15rem; font-weight: 600; line-height: 1.3; }
+.pf a.pf-title { text-decoration: none; }
+.pf a.pf-title:hover, .pf a.pf-title:focus-visible { text-decoration: underline; }
+.pf-wip { font-size: .8rem; margin-left: .6rem; padding: .1rem .5rem; border: 1px dashed currentColor; border-radius: 999px; opacity: .7; white-space: nowrap; }
+.pf-desc { margin: .35rem 0 0; opacity: .85; }
+.pf-tags { margin: .5rem 0 0; font-size: .85rem; letter-spacing: .02em; opacity: .65; }
+@media (max-width: 640px) {
+  .pf-row { grid-template-columns: 1fr; }
+  .pf-fig:empty { display: none; }
+  .pf-fig { margin-bottom: .75rem; }
+  .pf-head h2 { font-size: 1.35rem; }
+}
+@media (prefers-reduced-motion: reduce) { .pf-filter button { transition: none; } }
 </style>
 
-<div class="mm">
-<p class="mm-intro">Select a branch to see the projects behind each skill.</p>
-<svg id="mm-svg" viewBox="0 0 1000 640" role="group" aria-label="Skills and projects mind map"></svg>
-<section id="mm-panel" class="mm-panel" aria-live="polite"></section>
+<div class="pf">
+<div id="pf-filter" class="pf-filter" role="group" aria-label="Filter by skill"></div>
+<div id="pf-list"></div>
 <noscript>
 <ul>
 <li><a href="{{ '/projects/backtrack-nps/' | relative_url }}">Backtracking nanoplastics sampled in the abyssal South Atlantic</a></li>
@@ -51,126 +48,115 @@ permalink: /portafolio/
 
 <script>
 (function () {
-  /* EDIT HERE: skills are the branches, items are the project examples.
-     url: link to a project page (or null). wip: true draws a dashed "in progress" node.
-     img: optional thumbnail, e.g. "{{ '/assets/projects/backtrack.png' | relative_url }}", with alt: "short description". */
+  /* EDIT HERE. Each skill is a section with a label and its projects.
+     Project fields: title, url (or null), desc, img (optional thumbnail), wip (true shows "In progress"),
+     tags (optional extra labels). A project listed under two skills is shown in full under the first and as
+     a short cross-reference (with its image) in the "All" view; the other skills are added to its tags automatically. */
   var DATA = [
-    { label: "Oceanography", color: "#369acc", shape: "blob", items: [
-      { short: "Backtracking nanoplastics", title: "Backtracking nanoplastics sampled in the abyssal South Atlantic", url: "{{ '/projects/backtrack-nps/' | relative_url }}", desc: "Lagrangian backtracking of nanoplastics found in the deep South Atlantic.", img: "{{ '/assets/projects/backtrack/icon.jpeg' }}" },
-      { short: "Bayesian river plastics", title: "Bayesian inference of river plastics in the South Atlantic", url: "{{ '/projects/bayesian-plastic/' | relative_url }}", desc: "Attributing floating plastic to river sources.", img: "{{ '/assets/projects/bayesian/posterior_contour_Cape-Town.png' }}"},
-      { short: "Coastal modelling", title: "Coastal ocean modelling with CROCO", url: null, desc: "CROCO simulations.", img: "{{  }}"}
-    ]},
-    { label: "Fluid mechanics", color: "#95cf92", shape: "blob", items: [
-      { short: "Buoyant plume LES", title: "LES simulation of a buoyant plume", url: "{{ '/projects/plume/' | relative_url }}", desc: "", img: "{{ '/assets/projects/plume/steady_snapshot.png' }}"},
-      { short: "Abyssal turbulence", title: "Abyssal turbulence in the vicinity of Lucky Strike", url: "{{ '/projects/luckystrike/' | relative_url }}", desc: "" ,img: "{{ '/assets/projects/vents/PSD_2017_slopes.png' }}"},
-      { short: "Stratified convection", title: "Two-dimensional simulation of convection in a stratified fluid", url: "{{ '/projects/convection/' | relative_url }}", desc: "", img: "{{ '/assets/projects/convection/ugm_28_NN.png' }}"}
-    ]},
-    { label: "Dynamical systems", color: "#f4895f", shape: "blob", items: [
-      { short: "Moguls of chaos", title: "Moguls of chaos", url: "{{ '/projects/moguls-of-chaos/' | relative_url }}", desc: "", img: "{{ '/assets/projects/moguls_of_chaos/Ski_school_on_moguls_Edelweiss_slope_Les_Arcs.jpg' }}" }
-    ]},
-    { label: "Statistics and inference", color: "#9656a2", shape: "blob", items: [
-      { short: "Bayesian river plastics", title: "Bayesian inference of river plastics in the South Atlantic", url: "{{ '/projects/bayesian-plastic/' | relative_url }}", desc: "" },
-      { short: "Ensemble variability", title: "Information theory for ensemble particle simulations", url: null, desc: "Comparing probabilistic simulations with entropy and KL divergence.", img: "{{  }}"}
-    ]},
-    { label: "Neural networks", color: "#de324c", wip: true, shape: "blob", items: [
-      { short: "Neural Moguls of Chaos", title: "Physics-informed neural networks on down-ski toy model", url: null, wip: true, desc: "PyTorch through physics-informed neural network project.", img: "{{  }}"}
-    ]}
+    { label: "Oceanography",
+      items: [
+        { title: "Backtracking nanoplastics sampled in the abyssal South Atlantic", url: "{{ '/projects/backtrack-nps/' | relative_url }}", desc: "Lagrangian backtracking of nanoplastics found in the deep South Atlantic.", img: "{{ '/assets/projects/backtrack/icon.jpeg' | relative_url }}", tags:["Bayesian Inference", "Python", "Parcels"] },
+        { title: "Bayesian inference of river plastics in the South Atlantic", url: "{{ '/projects/bayesian-plastic/' | relative_url }}", desc: "Attributing floating plastic to river sources.", img: "{{ '/assets/projects/bayesian/posterior_contour_Cape-Town.png' | relative_url }}" },
+        { title: "Coastal ocean modelling with CROCO", url: null, wip: true, desc: "Personal compilation of CROCO simulations.", tags: ["CROCO 🐊", "Python"], img: null }
+      ] },
+    { label: "Fluid mechanics",
+      items: [
+        { title: "LES simulation of a buoyant plume", url: "{{ '/projects/plume/' | relative_url }}", desc: "Idealized 3D plume from an ocean hydrothermal vent.", img: "{{ '/assets/projects/plume/steady_snapshot.png' | relative_url }}", tags: ["Python", "Computational Fluid Dynamics"]},
+        { title: "Abyssal turbulence in the vicinity of Lucky Strike", url: "{{ '/projects/luckystrike/' | relative_url }}", desc: "Spectral analysis of 10-year seafloor measurements in ocean hydrothermal vents.", img: "{{ '/assets/projects/vents/PSD_2017_slopes.png' | relative_url }}", tags: ["Python", "Signal Processing", "Time Series Analysis", "Ocean Physics"]},
+        { title: "Two-dimensional simulation of convection in a stratified fluid", url: "{{ '/projects/convection/' | relative_url }}", desc: "2D idealized simulation of atmospheric thermal inversion.", img: "{{ '/assets/projects/convection/ugm_28_NN.png' | relative_url }}", tags: ["Python", "Computational Fluid Dynamics", "Atmospheric Physics"] }
+      ] },
+    { label: "Dynamical systems",
+      items: [
+        { title: "Moguls of chaos", url: "{{ '/projects/moguls-of-chaos/' | relative_url }}", desc: "Ski inspired toy model that is chaotic. Computing the strange attractors and bifurcation diagram.", img: "{{ '/assets/projects/moguls_of_chaos/Ski_school_on_moguls_Edelweiss_slope_Les_Arcs.jpg' | relative_url }}", tags:["Julia", "Python", "Dynamical Systems"]}
+      ] },
+    { label: "Statistics and inference",
+      items: [
+        { title: "Bayesian inference of river plastics in the South Atlantic", url: "{{ '/projects/bayesian-plastic/' | relative_url }}", desc: "Attributing floating plastic to river sources.", img: "{{ '/assets/projects/bayesian/posterior_contour_Cape-Town.png' | relative_url }}", tags:["Bayesian Inference", "Python", "Parcels"] },
+        { title: "Information theory for ensemble particle simulations", url: null, wip: true, desc: "Based on Pierard 2025. Comparing Lagrangian ensemble simulations with entropy and KL divergence.", img: null, tags:["Information Theory", "Python", "Parcels"]}
+      ] },
+    { label: "Neural networks",
+      items: [
+        { title: "Physics-informed neural networks on a Moguls of Chaos toy model", url: null, wip: true, desc: "PyTorch through a physics-informed neural network project.", img: null, tags:["Pytorch", "Dynamical Systems"]}
+      ] }
   ];
 
-  var NS = "http://www.w3.org/2000/svg", W = 1000, H = 640, CX = 500, CY = 320;
-  var svg = document.getElementById("mm-svg"), panel = document.getElementById("mm-panel");
-  function el(name, attrs, parent) {
-    var e = document.createElementNS(NS, name);
-    for (var k in attrs) e.setAttribute(k, attrs[k]);
-    if (parent) parent.appendChild(e);
+  var root = document.getElementById("pf-list"), bar = document.getElementById("pf-filter");
+  var current = "all", buttons = [];
+
+  function slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
+  function h(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text) e.textContent = text;
     return e;
   }
-  function rad(d) { return d * Math.PI / 180; }
-  /* S-shaped connector: off is how far the curve bows sideways */
-  function curve(x1, y1, x2, y2, off) {
-    var dx = x2 - x1, dy = y2 - y1, L = Math.sqrt(dx * dx + dy * dy) || 1, px = -dy / L * off, py = dx / L * off;
-    return "M" + x1 + "," + y1 + " C" + (x1 + dx * .33 + px) + "," + (y1 + dy * .33 + py) + " " + (x1 + dx * .66 - px) + "," + (y1 + dy * .66 - py) + " " + x2 + "," + y2;
-  }
 
-  var gEdges = el("g", {}, svg), gLeaves = el("g", {}, svg), gSkills = el("g", {}, svg);
-  /* Node shapes: change a skill's `shape` to pill, hexagon, droplet, blob, diamond or wave.
-     Each shape is a path drawn around (0,0); a = half width, b = half height. */
-  var SHAPES = {
-    pill:    { wf: 1,    dy: 0, d: function (a, b) { return `M${-a + b},${-b} H${a - b} A${b},${b} 0 0 1 ${a - b},${b} H${-a + b} A${b},${b} 0 0 1 ${-a + b},${-b}Z`; } },
-    hexagon: { wf: 1.1,  dy: 0, d: function (a, b) { var k = b * 0.9; return `M${-a},0 L${-a + k},${-b} L${a - k},${-b} L${a},0 L${a - k},${b} L${-a + k},${b}Z`; } },
-    droplet: { wf: 1.1,  dy: 6, d: function (a, b) { return `M0,${-1.3 * b} C${.3 * a},${-.7 * b} ${a},${-.3 * b} ${a},${.25 * b} C${a},${.85 * b} ${.55 * a},${b} 0,${b} C${-.55 * a},${b} ${-a},${.85 * b} ${-a},${.25 * b} C${-a},${-.3 * b} ${-.3 * a},${-.7 * b} 0,${-1.3 * b}Z`; } },
-    blob:    { wf: 1.1,  dy: 0, d: function (a, b) { return `M${-a},${.1 * b} C${-a},${-1.2 * b} ${-.4 * a},${-1.15 * b} ${.1 * a},${-b} C${.7 * a},${-.9 * b} ${a},${-.5 * b} ${a},0 C${a},${.8 * b} ${.5 * a},${1.15 * b} ${-.1 * a},${b} C${-.7 * a},${.95 * b} ${-a},${.7 * b} ${-a},${.1 * b}Z`; } },
-    diamond: { wf: 1.35, dy: 0, d: function (a, b) { return `M0,${-1.2 * b} L${a},0 L0,${1.2 * b} L${-a},0Z`; } },
-    wave:    { wf: 1,    dy: 5, d: function (a, b) { return `M${-a},${-.55 * b} Q${-.5 * a},${-1.35 * b} 0,${-.55 * b} T${a},${-.55 * b} L${a},${b} L${-a},${b}Z`; } }
-  };
-
-  var pills = [], active = -1;
-
-  DATA.forEach(function (s, i) {
-    var a = -90 + i * 360 / DATA.length;
-    s.angle = a;
-    s.x = CX + 215 * Math.cos(rad(a));
-    s.y = CY + 135 * Math.sin(rad(a));
-    el("path", { class: "edge", d: curve(CX, CY, s.x, s.y, (i % 2 ? -1 : 1) * 32), stroke: s.color, "stroke-width": 5, "stroke-dasharray": s.wip ? "8 6" : "none", opacity: 0.85 }, gEdges);
+  var where = {};
+  DATA.forEach(function (s) {
+    s.items.forEach(function (it) { (where[it.title] = where[it.title] || []).push(s.label); });
   });
 
-  var hub = el("g", { class: "hub" }, svg);
-  el("path", { d: SHAPES.blob.d(84, 62), transform: "translate(" + CX + "," + CY + ") rotate(-8)", fill: "#f8e16f" }, hub);
-  var t1 = el("text", { x: CX, y: CY - 4, "text-anchor": "middle" }, hub); t1.textContent = "Claudio";
-  var t2 = el("text", { x: CX, y: CY + 17, "text-anchor": "middle" }, hub); t2.textContent = "Pierard";
+  function titleNode(it) {
+    if (it.url) { var a = h("a", "pf-title", it.title); a.href = it.url; return a; }
+    return h("span", "pf-title", it.title);
+  }
 
-  DATA.forEach(function (s, i) {
-    var sh = SHAPES[s.shape] || SHAPES.pill;
-    var a = (s.label.length * 8.4 + 34) / 2 * sh.wf, b = 21;
-    var g = el("g", { class: "skill", tabindex: 0, role: "button", "aria-pressed": "false", "aria-label": s.label }, gSkills);
-    el("path", { class: "shape", d: sh.d(a, b), transform: "translate(" + s.x + "," + s.y + ") rotate(" + [0, -6, 5, -4, 7][i % 5] + ") scale(" + (i % 2 ? -1 : 1) + ",1)", fill: s.color, "stroke-dasharray": s.wip ? "5 4" : "none" }, g);
-    var t = el("text", { x: s.x, y: s.y + 5 + sh.dy, "text-anchor": "middle" }, g); t.textContent = s.label;
-    g.addEventListener("click", function () { select(i, true); });
-    g.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); select(i, true); } });
-    pills.push(g);
+  function row(it, s, dupeOf) {
+    var li = h("li", "pf-row" + (dupeOf ? " pf-dupe" : ""));
+    var fig = h("div", "pf-fig");
+    if (it.img) {
+      var im = h("img"); im.src = it.img; im.alt = ""; im.loading = "lazy";
+      if (it.url) { var l = h("a"); l.href = it.url; l.tabIndex = -1; l.setAttribute("aria-hidden", "true"); l.appendChild(im); fig.appendChild(l); }
+      else fig.appendChild(im);
+    }
+    li.appendChild(fig);
+    var body = h("div", "pf-body");
+    var t = h("div"); t.appendChild(titleNode(it));
+    if (it.wip) t.appendChild(h("span", "pf-wip", "In progress"));
+    body.appendChild(t);
+    if (dupeOf) {
+      body.appendChild(h("p", "pf-tags", "Also listed under " + dupeOf));
+    } else {
+      if (it.desc) body.appendChild(h("p", "pf-desc", it.desc));
+      var tags = (it.tags || []).concat(where[it.title].filter(function (l) { return l !== s.label; }));
+      if (tags.length) body.appendChild(h("p", "pf-tags", tags.join(", ")));
+    }
+    li.appendChild(body);
+    return li;
+  }
+
+  function render() {
+    root.textContent = "";
+    var seen = {};
+    DATA.forEach(function (s) {
+      if (current !== "all" && current !== slug(s.label)) return;
+      var sec = h("section", "pf-sec");
+      var head = h("div", "pf-head"); head.appendChild(h("h2", "", s.label)); sec.appendChild(head);
+      var ul = h("ul", "pf-rows");
+      s.items.forEach(function (it) {
+        var dupeOf = current === "all" ? seen[it.title] : null;
+        if (!seen[it.title]) seen[it.title] = s.label;
+        ul.appendChild(row(it, s, dupeOf));
+      });
+      sec.appendChild(ul); root.appendChild(sec);
+    });
+  }
+
+  function choose(key) {
+    current = key;
+    buttons.forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.key === key ? "true" : "false"); });
+    render();
+    if (history.replaceState) history.replaceState(null, "", key === "all" ? location.pathname : "#" + key);
+  }
+
+  [{ label: "All", key: "all" }].concat(DATA.map(function (s) { return { label: s.label, key: slug(s.label) }; })).forEach(function (o) {
+    var b = h("button", "", o.label); b.type = "button"; b.dataset.key = o.key;
+    b.addEventListener("click", function () { choose(o.key); });
+    bar.appendChild(b); buttons.push(b);
   });
 
-  function select(i, animate) {
-    active = i;
-    var s = DATA[i], n = s.items.length, step = 26;
-    pills.forEach(function (p, k) { p.setAttribute("aria-pressed", k === i ? "true" : "false"); });
-    gLeaves.textContent = "";
-    s.items.forEach(function (it, j) {
-      var a = s.angle + (j - (n - 1) / 2) * step, c = Math.cos(rad(a)), sn = Math.sin(rad(a));
-      var x = CX + 330 * c, y = CY + 240 * sn;
-      var g = el("g", { class: "leaf" + (it.wip ? " wip" : "") + (animate ? " pop" : ""), style: "--c:" + s.color }, gLeaves);
-      el("path", { class: "edge", d: curve(s.x, s.y, x, y, (j % 2 ? -1 : 1) * 14), stroke: s.color, "stroke-width": 2.5, opacity: 0.7 }, g);
-      var host = it.url ? el("a", { href: it.url }, g) : g;
-      el("circle", { cx: x, cy: y, r: 7 }, host);
-      var side = c > 0.25 ? 1 : c < -0.25 ? -1 : 0;
-      var t = el("text", { x: x + side * 14, y: side ? y + 4 : (sn > 0 ? y + 26 : y - 14), "text-anchor": side > 0 ? "start" : side < 0 ? "end" : "middle" }, host);
-      t.textContent = it.short;
-    });
-    renderPanel(s);
-  }
-
-  function renderPanel(s) {
-    panel.textContent = "";
-    panel.style.setProperty("--c", s.color);
-    var h = document.createElement("h2"); h.textContent = s.label; panel.appendChild(h);
-    var ul = document.createElement("ul");
-    s.items.forEach(function (it) {
-      var li = document.createElement("li");
-      if (it.img) {
-        var im = document.createElement("img"); im.src = it.img; im.alt = it.alt || ""; im.loading = "lazy";
-        if (it.url) { var l = document.createElement("a"); l.href = it.url; l.appendChild(im); li.appendChild(l); }
-        else li.appendChild(im);
-      }
-      var box = document.createElement("div"); li.appendChild(box);
-      if (it.url) { var a = document.createElement("a"); a.href = it.url; a.textContent = it.title; box.appendChild(a); }
-      else box.appendChild(document.createTextNode(it.title));
-      if (it.wip) { var tag = document.createElement("span"); tag.className = "mm-tag"; tag.textContent = " (in progress)"; box.appendChild(tag); }
-      if (it.desc) box.appendChild(document.createTextNode(": " + it.desc));
-      ul.appendChild(li);
-    });
-    panel.appendChild(ul);
-  }
-
-  select(0, false);
+  var start = location.hash.replace("#", "");
+  var valid = DATA.some(function (s) { return slug(s.label) === start; });
+  choose(valid ? start : "all");
 })();
 </script>
