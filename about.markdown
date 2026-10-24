@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="/assets/pelagia.jpg" width="200" style="float: right; margin-left: 35px; margin-right: 35px; margin-bottom: 25px;"/>
+<img src="/assets/prof_pic_2026_2.jpg" width="200" style="float: right; margin-left: 35px; margin-right: 35px; margin-bottom: 25px;"/>
 
 <p align="justify">I am a physicist and numerical modeler with a PhD in climate physics and six years of international research and industry experience. I have expertise in developing and analyzing high-performance simulations across oceanography, meteorology, fluid mechanics, and dynamical systems, with emphasis in forecasting, uncertainty quantification, and extracting robust meaning from complex datasets. Skilled in applying methods from physics and mathematics to solve cross disciplinary problems. Track record of delivering across academic and applied settings, with peer-reviewed publications, consortium collaboration, project management, and cross-functional project delivery in fast-paced environments.</p>
 
