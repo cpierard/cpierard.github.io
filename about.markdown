@@ -33,40 +33,40 @@ permalink: /about/
 
 
 
-**PhD Researcher | Institute for Marine and Atmospheric research Utrecht (IMAU).**<br />
+**PhD Researcher | Institute for Marine and Atmospheric research Utrecht (IMAU)**<br />
 &nbsp;&nbsp;&nbsp;Utrecht. October 2020 - December 2024.<br />
 &nbsp;&nbsp;&nbsp;Project: _Modeling the transport and formation of Marine nanoplastic_.<br />
 
-**Research Internship | Laboratoire d’Océanographie Physique et Spatiale (LOPS).**<br />
+**Research Internship | Laboratoire d’Océanographie Physique et Spatiale (LOPS)**<br />
 &nbsp;&nbsp;&nbsp;Brest. February 2020 - September 2020.<br />
 &nbsp;&nbsp;&nbsp;Project: _Characterizing oceanic turbulence in hydrothermal vents ecosystems._ <br />
 
-**Research Internship | Institut des Géosciences de l’Environnement (IGE).**<br />
+**Research Internship | Institut des Géosciences de l’Environnement (IGE)**<br />
 &nbsp;&nbsp;&nbsp;Grenoble. November 2018 - May 2019.<br />
 &nbsp;&nbsp;&nbsp;Master's research internship.<br />
 &nbsp;&nbsp;&nbsp;Project: _Measuring katabatic winds over a alpine slopes. A potential contributor to valley inversion layers_. <br />
 
-**Data Analyst | Instituto de Ciencias de la Atmósfera y Cambio Climático, UNAM.**<br />
+**Data Analyst | Instituto de Ciencias de la Atmósfera y Cambio Climático, UNAM**<br />
 &nbsp;&nbsp;&nbsp;Mexico City. July 2017 - August 2018.<br />
 &nbsp;&nbsp;&nbsp;Undergraduate Research Assistant, Ocean-Atmosphere Interaction group.<br />
 &nbsp;&nbsp;&nbsp;Project: _Development of an operational forecast system for extreme events using numerical models to predict extreme
 pollution events in Mexico City._.<br />
 
-**Modelling Specialist | Instituto de Ciencias de la Atmósfera y Cambio Climático, UNAM.**<br />
+**Modelling Specialist | Instituto de Ciencias de la Atmósfera y Cambio Climático, UNAM**<br />
 &nbsp;&nbsp;&nbsp;Mexico City. April 2017 - November 2017.<br />
 &nbsp;&nbsp;&nbsp;Project: _Numerical simulations of convection in a stratified fluid_.<br />
 
 ### Education
 -----------
 
-**Ph.D. Climate Physics.** <br />
+**Ph.D. Climate Physics** <br />
 &nbsp;&nbsp;&nbsp;Utrecht University (Oct. 2020 - Apr. 2025).<br />
 
-**M.Sc. Environmental Fluid Mechanics.** <br />
+**M.Sc. Environmental Fluid Mechanics** <br />
 &nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2019 - 2020).<br />
 
-**M.Sc. Applied Mechanics.** <br />
+**M.Sc. Applied Mechanics** <br />
 &nbsp;&nbsp;&nbsp;Université Grenoble Alpes (2018 - 2019).<br />
 
-**B.Sc. Physics.** <br />
+**B.Sc. Physics** <br />
 &nbsp;&nbsp;&nbsp;Universidad Nacional Autónoma de México (2011 - 2017). <br />

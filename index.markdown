@@ -11,7 +11,7 @@ layout: page
 
 # Welcome!
 
-This is a portafolio and an archive of the projects that I worked on.
+This is a portfolio and an archive of the projects that I worked on.
 
 Feel free to reach out.
 
