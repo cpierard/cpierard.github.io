@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  "Abyssal Turbulence in the Vicinity of
-Lucky Strike"
+title:  "Abyssal turbulence in the vicinity of the Lucky Strike hydrothemal field"
 permalink: /projects/luckystrike/
-youtubeId: mP6my1nAQlo
+youtubeId: mP6my1nAQl
 ---
 
 > The objective of this study was to analyze observations from the mooring anchored to the South-West of the Lucky Strike volcano, to identify the different processes that occur over Lucky Strike, such as internal tides or passing mesoscale eddies. Also, the 9 years of data collected for the mooring allow us to see if there is interannual variability in this region.
