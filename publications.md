@@ -32,9 +32,9 @@ permalink: /publications/
 
 ### Posts
 --------
-- [Backtracking nanoplastics sampled in the abyssal South Atlantic](/projects/backtrack-nps/)
-- [Bayesian inference of river plastics in the South Atlantic](/projects/bayesian-plastic/)
-- [LES simulation of a buoyant plume](/projects/plume/)
-- [Abyssal turbulence in the vicinity of Lucky Strike](/projects/luckystrike/)
-- [Moguls of chaos](/projects/moguls-of-chaos/)
-- [Two-dimensional simulation of convection in a stratified fluid](/projects/convection/)
+<ul>
+{% assign posts_by_date = site.posts | sort: 'date' | reverse %}
+{% for post in posts_by_date %}
+	<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})</li>
+{% endfor %}
+</ul>
