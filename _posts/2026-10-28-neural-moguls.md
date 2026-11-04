@@ -56,7 +56,7 @@ Why sines and cosines? Because the slope is periodic, and for the network the dy
 
 **Outputs.** Instead of the next state, the network predicts the change of the state over a short time step $$h = 0.05$$ s, that is, the vector $$(\Delta y, \Delta v)$$. For training, these changes are standardized (zero mean and unit standard deviation, computed from the training set).
 
-**Training.** I cut every training trajectory into pairs: the state at one time (the five inputs) and the change over the following 0.05 s (the two outputs). With 6400 training sleds and 500 steps each, this gives 3.2 million examples. So during training the network only learns to predict a single step, and it never sees a whole trajectory. The loss function is the mean squared error between the predicted and the true changes, and I minimized it with the Adam optimizer, using a learning rate of **0.001** and mini-batches of **4096** examples. The computing time was fast, and the error kept going down as the epochs went by, so I trained the network for 20 epochs, where the error dropped to **[XX]**. (This error is in standardized units, where 1 means that the network is no better than always predicting the average change.)
+**Training.** I cut every training trajectory into pairs: the state at one time (the five inputs) and the change over the following 0.05 s (the two outputs). With 6400 training sleds and 500 steps each, this gives 3.2 million examples. So during training the network only learns to predict a single step, and it never sees a whole trajectory. The loss function is the mean squared error between the predicted and the true changes, and I minimized it with the Adam optimizer, using a learning rate of 0.001 and mini-batches of 4096 examples. The computing time was fast, and the error kept going down as the epochs went by, so I trained the network for 20 epochs, where the error dropped to $$1e-4$$. (This error is in standardized units, where 1 means that the network is no better than always predicting the average change.)
 
 **Predicting a trajectory.** To predict a whole trajectory, I feed the network its own output. This is the forward algorithm:
 
@@ -81,19 +81,25 @@ What we can see is that in the first 10 m down the slope, the network matches th
 </p>
 ###### True (blue) and predicted (orange) trajectories of 7 randomly selected test sleds, for b = 0.5 m and u = 3.5 m/s. The network only receives the initial condition at x = 0 and then feeds on its own output. Each panel shows one sled going down the slope, and y is not wrapped, so the sleds can wander across several tiles.
 
+To quantify how the predictions degrade as the sleds go down the slope, I computed the root mean square (RMS) error between the predicted and the true trajectories over all the test sleds, as a function of time.
 
+<p class="aligncenter"> <img src="/../assets/projects/neural_moguls/mlp_rms_error_b0.50_u3.50.png" width="65%" alt="RMS error of the predicted position and velocity as a function of time" /> </p>
+##### RMS error of the predicted cross-slope position y (blue) and velocity v (orange) as a function of time, computed over the test sleds for b = 0.5 m and u = 3.5 m/s. At 3.5 m/s, 5 s correspond to about 18 m down the slope and 10 s to 35 m.
 
-<p class="aligncenter">
-<img src="/../assets/projects/neural_moguls/mlp_rms_error_b0.50_u3.50.png" width="65%" />
-</p>
-###### caption.
+The error is tiny at the beginning: during the first 3 s (about 10 m down the slope) the error in $$y$$ stays below half a meter. Then it grows, reaching about 1 m after 5 s and about 5 m after 10 s. This quick growth has a flavor of chaos, and it agrees with what we saw in the individual trajectories, where the predictions started to separate after about 20 m. After 10 s the error in the velocity stops growing and fluctuates around 2 to 2.5 m/s, which is comparable to the spread of the velocities themselves (the friction keeps $$v$$ bounded between -5 and 5 m/s). At that point the network doesn't know the velocity of a particular sled anymore. The error in $$y$$ keeps growing, but more slowly, until it reaches about 10 m at the end. Remember that $$y$$ is not wrapped, so a sled that the network puts in the wrong lane counts as an error of several meters, and by the end of the run the sleds themselves are spread over about 10 m across the slope.
 
-<p class="aligncenter">
-<img src="/../assets/projects/neural_moguls/mlp_phase_space_b0.50_u3.50.png"/>
-</p>
-###### caption.
+The network cannot follow an individual sled for more than 5 to 10 s, but that is what we expect from a chaotic system. In Part 1, a difference of 1 mm in the initial position was enough to make two boards go their separate ways, and any model that makes even tiny errors will drift away from the true trajectory after some time. What matters in the end is whether the network learned the dynamics well enough to produce the same attractor as the physics-based model. To check this, I compared the phase space of all the test sleds at different distances down the slope. The sleds are dropped at $$x = 0$$ with $$y$$ and $$v$$ uniformly distributed, so they start as a uniform cloud that is stretched and folded as they go down the slope until the strange attractor appears.
 
-<p class="aligncenter">
-<img src="/../assets/projects/neural_moguls/mlp_phase_space_b0.50_u3.50.gif" width="85%" />
-</p>
-###### caption.
+<p class="aligncenter"> <img src="/../assets/projects/neural_moguls/mlp_phase_space_b0.50_u3.50.png" alt="True and predicted phase space at 0, 7, 18 and 35 m down the slope"/> </p>
+##### Phase space $$(y, v)$$ of the test sleds at 0, 7, 18 and 35 m down the slope (0, 2, 5 and 10 s). Top row: true (blue). Bottom row: predicted by the network (orange), which only receives the initial conditions at 0 m. For display, $$y$$ is wrapped into the periodic tile $$[-2, 2)$$ m.
+
+The top row shows the true phase space and the bottom row the one predicted by the network. At 0 m both are identical, by construction, because the network starts from the same initial conditions. The phase plots for the predicted sleds further down the slope manage to follow the same manifold as the true sled, but if you compare the true and predicted at the same down slope distance, there points are arranged differently, because the trajectories are different.
+
+This is the part I find most interesting. At 35 m, 10 s after the start, the RMS error tells us that the individual predictions are already far off, about 5 m in $$y$$ and 2 m/s in $$v$$. The individual points no longer sit in the same places, yet the predicted cloud is distributed on the same attractor. In other words, the network did not learn to follow each sled, but it did learn the dynamics that shape the attractor: the stretching and folding that all the sleds go through.
+
+Here is the same comparison as an animation, as the sleds go down the slope:
+
+<p class="aligncenter"> <img src="/../assets/projects/neural_moguls/mlp_phase_space_b0.50_u3.50.gif" width="85%" alt="Animation of the true and predicted phase space as the sleds go down the slope" /> </p>
+###### Animation of the phase space $$(y, v)$$ of the test sleds as they go down the slope, for b = 0.5 m and u = 3.5 m/s. True (blue) and predicted by the network (orange).
+
+I'm thinking of doing the same but on an aperiodic bumpy slope. I wonder if the network will struggle representing the physics. If it doesn't, it might be a nice to implement some physics into the network.
